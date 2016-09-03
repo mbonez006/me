@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+                 
+                 var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1 </h3>
+             <h4><a href="#" id="week1">Making Changes on New System & Existing System</a></h4>
+                    <p>This week I worked on adding new features to a new system known as the (MCRLTR) - Its meant to be used by scientists to report certain information after an experiment has been carried out.
+                    This application is written in ASP.NET and C#. The information that are added requires being saved on a Sharepoint List. <br>
+                    This week I also worked on existing system. I made some changes on the main sign-up page of our systems (AUTH program we call it), adding "terms and conditions" based on certain user-selection.
+                    </p>
+                 <hr>
+
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Learning with Video Tutorials on PluralSight!</a></h4>  
+                    <p>Listed below are the key things I was involved with doing this week..</p>
+                    <dl>
+                        <dt>MCRLTR (New Application) Demo To User</dt>
+                            <dd>Had a 2 hours meeting with a user to show him the progress we've made with the new web application we're building for him and his team.
+                            He appreciated the system but also made a lot of feature requests (some of which were part of the initial requirements of the application anyway).</dd>
+                        <dt>Computing Group Meeting (Computing in CLF - Making Simulations)</dt>
+                            <dd>We had a computing group meeting this week and had a talk that was given by someone from another department of STFC - CLF (Central Laser Facility). His talk was basically about the impact of computing on Laser Experiments, specifically in regards to making simulations.</dd>
+                        <dt>Worked On Email Templates Getting Sent to users - (Using FreeMarker)</dt>
+                            <dd>This week I also worked on the email templates that is being used by one of our systems to send rather important emails out to users of the software and facility. This got me to investigate the use of <a href="http://freemarker.org/docs/dgui_quickstart_template.html#autoid_10" target="_blank">FreeMarker</a> to customise emails and adjust parts of an email dynamically! </dd>
+                        <dt>Watched a 2 hours VIDEO TUTORIAL on LESS and SASS</dt>
+                            <dd>Yeah, learnt and had an amazing realisation of how you can do a lot more with CSS using "LESS" or "SASS". Emphasis on the tutorial was on when CSS is Painful on its own, why "LESS" is More, and then using "SASS" - which in my opinion is "LESS" with extras..<br>
+                            This Tutorial was in preparation for a project that the team will be embarking on which the team is looking to use "LESS".</dd>
+                        <dt>Watched a 3 hours VIDEO TUTORIAL on AngularJS</dt>
+                            <dd>Learnt about ANgularJS - The tutorial used an on-line tool to write code which I thought was incredibly useful (<a href="http://plnkr.co/" target="_blank">Plunker</a>)<br>
+                            Learnt about IIFE in Javascript, and then a deeper dive into AngularJS Controllers, Directives & Views, Services and Routing. <br>
+                            I at the end of the tutorial realised a lot more can be achieved on the client-side of a web application using AngularJS.
+                            </dd>
+                        <dt>Watched a 1 hour VIDEO TUTORIAL on SQL</dt>
+                        <dd>This was specifically on using "JOIN" in SQl which is also incredibly useful for querying multiple database tables </dd>
+                    </dl>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+         
+             <h4><a href="#" id="week3">Meeting And Training With Users - Adding Features To The New MCRLTR Software - Supporter Of The Week</a></h4>   
+             <p>Listed below are the key things I was involved with doing this week..</p>
+                <dl> 
+                    <dt>Supporter of the week</dt>
+                        <dd>I was the supporter of the week this week, and I was therefore responsible for helping out the users of our software if/when a big issue arises. I was also documenting reports and bugs by creating tickets for them.</dd>
+                    <dt>3 Hours Training Meeting With A User</dt>
+                        <dd> I visited a user to train her on using the new (Scheduler) software that had only be released for full use a month before. The meeting was although long but very productive in that it resulted in bug discoveries while I was still with the user and also feature requests from the user. My presence was an opportunity to reassure the user that although there are still issues here and there with the system because its still new, there aren't show-stoppers and the system can actually be trusted especially as other users are currently using the software successfully.</dd>
+                    <dt>Had a 1 Hour Meeting With Some Users About How To WorK-Around A Certain Issue on A system till a more appropriate way is found</dt>
+                    <dt>Added more features To the new MCRLTR</dt>                    
+                </dl>
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">STEM Networking - Talk On "Energy for the 21st Century" - Performance Upgrade On System</a></h4>  
+                <dl> 
+                    <dt>STEM Networking Sessions</dt>
+                        <dd>I attended a STEM Ambassador Networking session which was mainly setup with the aim of discussing ideas for activities and training</dd>
+                    <dt>Had a 1 Hour Meeting With Some Users About How To WorK-Around A Certain Issue on A system till a more appropriate way is found</dt>
+                    <dt>Attending A Talk On "Energy for the 21st Century" by Professor Roger Cashmore CMG, FRS - Chairman, United Kingdom Atomic Energy Authority</dt>       
+                        <dd>As part of the opportunities of being at a place like STFC is the amount of talks that are help on-site, talks that can be freely attended. <br>
+                        I attended a talk that covered the current sources of energy particularly in the UK and the way to go in terms of considering the future (which the speaker placed emphasis on the need for investment into Nuclear power), there are of-course challenges!</dd>
+                    <dt>Huge Performance Upgrade on The New MCRLTR Application - Using A Tree Data Structure</dt>          
+                        <dd>I made a huge performance upgrade on a part of the MCRLTR application that was supposed to allow a user to select a Parent Category, and then based on that select the appropriate Child Category, and then based on then select a Grand-Child Category, and then a Great-Grand Child Category. This information being read is from a sharepoint which I had previously structured in a way for each element to know of its parent or children. Previously, the system was build in a way where a Parent Category is generated and then upon selection by a user a web service call to the Sharepoint list will be made in order to retrieve the Children.... This made this process incredibly slow for proper usage especially because the application will be expected to be used on mobile devices like the Ipad...<br>
+                        To improve this, the first idea was to build the entire list of categories locally into a Tree Structure (thanks to ONE web-service call), and then transverse through this list locally to get data and build Children Categories (this, in place of making web-service calls to sharepoint every time a new Category list needs to be built.)</dd>       
+                </dl>  
+                <hr>
+
+                <div class="pagination pagination-large">
+                    <ul>
+                    <li><a href="sandwichMonth1.html">July</a></li>
+                    <li><a href="sandwichMonth2.html">August</a></li>
+                    <li><a href="sandwichMonth3.html">September</a></li>
+                    <li><a href="sandwichMonth4.html">October</a></li>
+                    <li><a href="sandwichMonth5.html">November</a></li>
+                    <li><a href="sandwichMonth6.html">December</a></li>
+                    <li><a href="sandwichMonth7.html">January</a></li>
+                    <li class="active"><a href="sandwichMonth8.html">February</a></li>
+                    <li><a href="sandwichMonth9.html">March</a></li>
+                    <li><a href="sandwichMonth10.html">April</a></li>
+                    <li><a href="sandwichMonth11.html">May</a></li>
+                    <li><a href="sandwichMonth12.html">June</a></li>                          
+                    </ul>
+                </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth7.html">Prev</a></li>
+                  <li><strong>February 2015</strong></li> 
+                  <li><a href="sandwichMonth9.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 67%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

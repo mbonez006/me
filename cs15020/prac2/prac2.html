@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <title>JavaScript Practical</title>
+	<script type="text/javascript">
+<!-- // ======== Script 1: a function (called in the body tag) ===============
+		function welcome()
+		{
+			alert("Welcome, Sean!");
+		}
+		// -->
+	</script>
+
+<!-- Script 2 is inline below -->
+
+	<script type="text/javascript">
+<!-- // ======== Script 3: Forms input processing in JS ======================
+		function calc_exchange()
+		{
+		
+		var theAmount = document.forms[0].amount.value;
+		
+		t = theAmount * 0.66
+		var total = t.toFixed(2);
+		
+		document.forms[0].result.value = total;
+
+		}
+
+// -->
+</script>
+</head>
+
+<body onload="welcome()">
+	<h1>CS15020: Practical 2: Writing some JavaScript</h1>
+
+	<p>The scripts in this page may not
+	work as you expect. You probably want to customise to
+	your own taste anyway!</p>
+
+	<p>The most important thing is that you make sure you understand 
+	each script.</p>
+
+	<hr />
+	<p>
+	The first script is called when the body loads. Can you customise
+	it so that it prompts you for your name, then welcomes you
+	personally? (we saw the <tt>prompt</tt> command in the lectures)</p>
+
+	<hr />
+	<p>Today is
+	<script type="text/javascript">
+<!-- // ======== Script 2: Dates and numbers as strings ======================
+		Today = new Date();
+		document.write(Today.getDate()+ "/" + (Today.getMonth() + 1) + "/" + (Today.getFullYear()));
+		// Hint: remember what we said about types in JavaScript and
+		// the overloading of the + operator
+		// Remember also what we said abuot the Y2K bug
+		// -->
+	</script>
+	</p>
+	<p>Is this correct? If not, see if you can fix it!</p>
+
+	<hr />
+	<p>
+	<script type = "text/javascript">
+	<!--//
+		Today = new Date();
+		var hour = Today.getHours();
+		
+		if(hour > 11 && hour < 19){
+			document.write("Good Afternoon!");
+		}
+		else if (hour > 0 && hour < 12){
+			document.write("Good Morning!");
+		}
+		else{
+			document.write("Good Evening!");
+		}
+		
+	//-->
+	</script>
+	Can you add in a script here to write "good morning", 
+	"good afternoon" or "good evening", as appropriate? Use the 
+	same idea as above for the date.
+	
+	</p>
+	
+	<hr />
+
+
+	<p>The following is an example of processing input to an XHTML form
+	using JavaScript. See if you can modify this to be a two-way exchange
+	rate calculator.</p>
+	<form action="">
+		<p>
+		How much in dollars
+		<input type="text" name="amount" size="7" />
+		</p>
+		<p>
+		<input type="button" name="calc" onclick="calc_exchange()" value="Calculate" />
+		</p>
+		<p>
+		Amount in pounds is
+		<input type="text" name="result" size="7" />
+		</p>
+	</form>
+
+	<hr />
+
+	<p>This practical work is not part of the assessment for the
+	course, but is designed to help you understand what we have
+	covered in lectures.</p>
+
+	
+	<p>
+	<a href="mailto:ais@aber.ac.uk">Click here to email me</a>
+	</p>
+	<p>
+	<a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml11"
+        alt="Valid XHTML 1.1!" height="31" width="88" /></a>
+	</p>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+     <script>
+     $(document).ready(function(){
+         $("#images1").hide();
+         $("#images2").hide();
+         $("#images3").hide();
+         $("#images4").hide();
+        $("#showImages").click(function(){
+            $("#images1").toggle();
+            $("#images2").toggle();
+            $("#images3").toggle();
+            $("#images4").toggle();
+        });
+
+        var screenWidth = screen.width;
+        if(screenWidth < 700){
+           $("#navigationList").hide(); 
+        }
+     });
+     </script>
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+<!-- WEEK 1 -->                 
+             <h3>Week 1</h3>
+             <h4><a href="#" id="week1"> Setting Things Up</a></h4>
+             <p>
+                 Well, my first week at STFC was quite interesting. I met loads of people and could hardly retain any of the names.
+                 I met the helpful team I'll be working with. <br>
+                 I spent my first couple of days setting my workstation up and installing all the software I'll be needing. This includes the typical
+                 development software like Netbeans. But I also had to enable Active directory and similar stuff...<br>
+                 Also in the first week, I attended trainings after trainings. Attended trainings and meetings on Health and Safety, Occupational Health,
+                 HR meetings, computing group meetings, etc<br>
+                 I ended the week by starting to go through tutorials to catchup/learn the technologies I'll be using over time. My first tutorials were on
+                 front-end related web development stuff - These technologies includes HTML5, JQuery, Bootstrap, ASP.NET and C#.                  
+             </p>
+             
+                 
+             <div id = "images1">
+                 <ul class="thumbnails">
+                  <li class="span6">
+                    <div class="thumbnail">
+                        <a href="../img/month1week1_1.jpg" data-lightbox="month1week1" data-title="So I got a USB-Pen combo with my induction pack!"><img src="../img/month1week1_1.jpg" alt=""></a>
+                        <p>So I got a USB-Pen combo with my induction pack!</p>
+                    </div>
+                  </li>
+                 <li class="span6">
+                <div class="thumbnail">
+                    <a href="../img/month1week1_2.jpg" data-lightbox="month1week1" data-title="My desk and twin monitor...which later got replaced with new double singles"><img src="../img/month1week1_2.jpg" alt=""></a>
+                    <p>My desk and twin monitor...which later got replaced with new double singles</p>
+                </div>
+                  </li>
+                 </ul>
+            </div>
+            <hr>
+             
+<!-- WEEK 2 -->             
+             <h3>Week 2</h3>
+             <h4><a href="#" id="week2">Tutorials and Support</a></h4>    
+            <p>
+                Spent some more time reading tutorials. Emphasis on ASP.NET, C# and now Java EE.
+                Started looking into supporting the users of the software being made from the team.
+                This support can either be via phone or email and are generally technical supports.
+                This required learning and understanding the different aspects of the system and applications. It also included learning
+                how to communicate appropriately when supporting application users that are basically scientists and 'Dr's in their different fields.
+            </p>     
+          
+                 
+             <div id = "images2">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                        <a href="../img/month1week2_1.jpg" data-lightbox="month1week2" data-title="Its never really enough till you have three screens... one for code, the other for emails, and the third for....code!"><img src="../img/month1week2_1.jpg" alt=""></a>
+                      <p>Its never really enough till you have three screens... one for code, the other for emails, and the third for....code!</p>
+                    </div>
+                  </li>
+                 </ul>
+            </div>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3>Week 3</h3>
+             <h4><a href="#" id="week3">Testing and Java EE</a></h4>    
+            <p>
+                I was introduced to the testing part of Software Engineering - This included Unit testing, Integration Testing and UI Testing.<br>
+                Since looking at testing, I was introduced to looking at back-end code of some of the applications we use - This was written using Java EE.
+                For Unit testing - I was introduced to using JMockIt which I found quite nice to write (when writing a new test), but can get tricky if/when modifying existing code.
+                For Integration test - I was introduced to using technologies which includes SVN and GlassFish.
+                I'm working on fixing failed unit tests (over 200) - which failed due to some refactoring that I did.<br><br>
+
+                Starting to roughly know what I'm doing - which is great!
+            </p> 
+           
+                 
+             <div id = "images3">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                        <a href="../img/month1week3_1.jpg" data-lightbox="month1week3" data-title="Another view of my team's office.."><img src="../img/month1week3_1.jpg" alt=""></a>
+                      <p>Another view of my team's office..</p>
+                    </div>
+                  </li>
+                 </ul>
+            </div>
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3>Week 4</h3>
+             <h4><a href="#" id="week4">End of first month</a></h4>    
+            <p>Got new monitors screens ordered and delivered for me! (yay!) - for even more comfort</p>   
+          
+                 
+             <div id = "images4">
+                 <ul class="thumbnails">
+                  <li class="span6">
+                    <div class="thumbnail">
+                        <a href="../img/month1week4_1.jpg" data-lightbox="month1week4" data-title="So.. this is what its all about ... Model of a typical target station at STFC - Protons everywhere!!!"><img src="../img/month1week4_1.jpg" alt=""></a>
+                      <p>So.. this is what its all about ... Model of a typical target station at STFC - Protons everywhere!!!</p>
+                    </div>
+                  </li>
+                 <li class="span6">
+                <div class="thumbnail">
+                    <a href="../img/month1week4_2.jpg" data-lightbox="month1week4" data-title="Another view? Dunno, but there's power in '2's!"><img src="../img/month1week4_2.jpg" alt=""></a>
+                  <p>Another view? Dunno, but there's power in '2's!</p>
+                </div>
+                  </li>
+                 </ul>
+            </div>
+                 <hr>
+
+               <div class="pagination pagination-large">
+                <ul>
+                <li class="active"><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu">
+                 <ul class="pager">
+                  <li class="disabled"><a href="#">Prev</a></li>
+                  <li><strong>July 2014</strong></li> 
+                  <li><a href="sandwichMonth2.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 8%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a href = "#week1"><strong>Week 1</strong> <br>Setting things Up</a></li>
+                     <li><a href = "#week2"><strong>Week 2</strong> <br>Tutorials and Support</a></li>
+                     <li><a href = "#week3"><strong>Week 3</strong> <br>Testing Testing</a></li>
+                     <li><a href = "#week4"><strong>Week 4</strong> <br>Looking forward to that first pay Check</a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

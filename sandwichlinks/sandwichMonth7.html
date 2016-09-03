@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+                 
+                 var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1 </h3>
+             <h4><a href="#" id="week1">Spring Clean 2015</a></h4>      
+                 <p>My team had a meeting in order to set a new years resolution for the team. We effective decided that while a few members of the team will be working on some parts of the software that had just been released into production, there will be a "Spring Clean" which will basically involve focusing on the processing that we use for our day to day job and looking at ways we could improve this for the sake of greater productivity.
+                 This includes considering moving from using "GLASSFISH" as a server for our JAVA applications to "WILDFLY"... Also includes considering moving our applications from using Java 6 to Java 7/8.. It also includes moving all of our source control repository from SVN to "GIT"...using GITHUB.<br><br>
+                     <strong>Making Texts Dynamically Editable On A System
+                     </strong><br>
+                 My task for this week also includes working on one of our software applications and making the "texts" on the application dynamically changeable by using another application. This other application interacts directly with the dabatase.. <br> This program was written using Struts.. The whole idea behind this project is to allow certain types of staff in the facility to be able to use edit the texts on that system whenever they like without letting my team know about it every time.
+                 </p>
+                 <hr>
+                              
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Adding New Feature To One Of Our System</a></h4>  
+                 <p>
+                <strong>Dutch Access - The Orange Button</strong><br>
+                     I added a new feature to one of our systems - know as the proposal system, which is used by the users of ISIS to make proposals about coming to the facility to make an experiment. The feature included having an access route to the system that is unique and is expected to be used only by the Dutch and for a certain ISIS instrument. 
+                     This project was in Struts..
+                     <br><br>
+                     <strong>Computing Group Meeting</strong><br>
+                     There was the monthly computing group meeting where there was a talk given by someone from a department of STFC - RAL Space... He talked about how RAL Space collaborate with CERN on a certain project and what that's like..
+                 </p>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+         
+             <h4><a href="#" id="week3">Meeting With User - Finding Out About Bugs - Gathering New Feature Requests</a></h4>    
+                <p>I had a meeting with a few users of the new system that has just been released and is being used by the users... This meeting was for the purpose of finding out more about the bug the user was experiencing and making detailed notes about them, as well as gathering new feature requests from the user... These requests and even most of the bugs are something that the team is aware of or has been reported earlier, but finding out more about it helps the team to priortise tasks and TRAC tickets..</p>       
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">"Gadgets - What's MY Line" ++ SVN to GIT</a></h4>    
+                <p>
+                <strong>STEM AMBASSADOR - Gadgets - What's MY Line</strong><br>
+                    This week, about 100 year 7/8 school kids visited the facility and one of the activities they were involved with is "Gadgets - What's My Line". This involved them having to guess what a certain scientist/Engineer has as a gadget (which will be what the scientist/Engineer uses for their job), what he/she does, and the person's job title. The kids will have to find this answer out by asking questions from the scientist/Engineer...<br>As a STEM Ambassador, I volunteered to be one of the engineers (Software Engineer), and as my gadget, I had with me a keyboard and a mouse. This turned out to be a really exciting activity and they kids had lots of fun trying to guess what my job was... (guessing what the gadgets was wasn't hard for them).
+                     <br><br>
+                     <strong>ASSISTING WITH REFACTORING DUE TO MOVING FROM SVN TO GIT</strong><br>
+                    As a result of moving from svn to git, some refactoring had to take place... this includes removing some hard-coded passwords from code and placing them in a configuration file instead...and this had to be checked across ALL repositories.. This wasn't as easy as it sounds due lots of project relying and depending on each other due to the nature of out applications..
+                 </p>
+<hr>
+                 
+               <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li class="active"><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth6.html">Prev</a></li>
+                  <li><strong>January 2015</strong></li> 
+                  <li><a href="sandwichMonth8.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 58%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

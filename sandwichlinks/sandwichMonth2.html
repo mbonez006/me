@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+
+                var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+            
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1</h3>
+             <h4><a href="#" id="week1">Acceptance Testing - BLAATs</a></h4>
+             <p>This week, I got introduced to a way of using code to test code at an even higher level using a framework put together by a colleague at work. The framework (called BLAATs) uses Selenium and this enables a programmer to be able to test applications on a web browser without the need to touch the mouse or keyboard - as the operations to be tested are coded and hence performed automatically. This framework includes the use of Command Line design pattern and Unit testing.<br><strong>Pretty cool stuff</strong><br> I was also "Supporter of the week" this week. So I get to communicate with users office on phone or via emails in order to support them with queries that may arise regarding new and existing tools and applications. I got to remotely log into a user's computer in order to rectify some issues with her copy of an application.<br> I wrote more unit tests for some methods in our application (using JMockIt)</p>
+             
+                 
+             <div id = "images1">
+                 <ul class="thumbnails">
+                  <li class="span4">
+                    <div class="thumbnail">
+                        <a href="../img/month2week1_1.jpg" data-lightbox="month2week1" data-title="Got to visit an ISIS target station"><img src="../img/month2week1_1.jpg" alt=""></a>
+                      <p>Got to visit an ISIS target station</p>
+                    </div>
+                  </li>
+                 <li class="span4">
+                <div class="thumbnail">
+                    <a href="../img/month2week1_2.jpg" data-lightbox="month2week1" data-title="Got to visit an ISIS target station"><img src="../img/month2week1_2.jpg" alt=""></a>
+                  <p>Got to visit an ISIS target station</p>
+                </div>
+              </li>
+                     <li class="span4">
+                <div class="thumbnail">
+                    <a href="../img/month2week1_3.jpg" data-lightbox="month2week1" data-title="Got to visit an ISIS target station"><img src="../img/month2week1_3.jpg" alt=""></a>
+                  <p>Got to visit an ISIS target station</p>
+                </div>
+              </li>
+            </ul>
+            </div>
+                 <hr>
+                              
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Meetings</a></h4>    
+            <p>I attended a total of 4 meetings this week - Meetings with line manager, meetings with the department's Computing group. One of the meeting with my line manager involved drawing out a work plan for me for the next few months. Highlights of it was getting some info in regards to small projects I'll be working on for the next few weeks even whilst contribution to general projects. <br> I was able to finally catchup with another intern from my Uni.<br>Was Involved in testing, debugging and fixing the new application the team is looking to release to production soon.</p>     
+                 
+             <div id = "images2">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                        <a href="../img/month2week2_1.jpg" data-lightbox="month2week2" data-title="Panorama view of ISIS target station"><img src="../img/month2week2_1.jpg" alt=""></a>
+                      <p>Panorama view of ISIS target station</p>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+             <h4><a href="#" id="week3">Writing BLAATs + Three Days Off</a></h4>    
+            <p>Starting writing BLAATs tests for the new application. The BLAATs are intended to replace most of the manual testing. The whole team was pretty much involved in doing this. <br> Only worked for two days this week as I had to attend a convention in London.</p>  
+             <div id = "images3">
+                 <ul class="thumbnails">
+                  <li class="span6">
+                    <div class="thumbnail">
+                        <a href="../img/month2week3_1.jpg" data-lightbox="month2week3" data-title="Cool monitoring station"><img src="../img/month2week3_1.jpg" alt=""></a>
+                      <p>Cool monitoring station</p>
+                    </div>
+                  </li>
+                 <li class="span6">
+                <div class="thumbnail">
+                    <a href="../img/month2week3_2.jpg" data-lightbox="month2week3" data-title="More Pictures of ISIS target station"><img src="../img/month2week3_2.jpg" alt=""></a>
+                  <p>More Pictures of ISIS target station</p>
+                </div>
+              </li>
+            </ul>
+            </div>
+            <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">Writing SQL Scripts + More BLAATs</a></h4>    
+            <p>Wrote SQl Scripts to setup some specific user roles on an application that is soon going into production. This involved following an organogram and making sure the user exists on the system, getting the user's user-number and writing a script appropriate role setup.<br>Also wrote more BLAATs tests for the new application.</p>   
+                 
+                 
+             <div id = "images4">
+                 <ul class="thumbnails">
+                  <li class="span3">
+                    <div class="thumbnail">
+                      <a href="../img/month2week4_1.jpg" data-lightbox="month2week4" data-title="'Sample Environment'"><img src="../img/month2week4_1.jpg" alt=""></a>
+                      <p>"Sample Environment"</p>
+                    </div>
+                  </li>
+                 <li class="span3">
+                <div class="thumbnail">
+                  <a href="../img/month2week4_2.jpg" data-lightbox="month2week4" data-title="heavy MAGNETS!!"><img src="../img/month2week4_2.jpg" alt=""></a>
+                  <p>heavy MAGNETS!!</p>
+                </div>
+              </li>
+                     <li class="span3">
+                <div class="thumbnail">
+                  <a href="../img/month2week4_3.jpg" data-lightbox="month2week4" data-title="These stuffs converts streams of analog data into digital"><img src="../img/month2week4_3.jpg" alt=""></a>
+                  <p>These stuffs converts streams of analog data into digital</p>
+                </div>
+              </li>
+                     <li class="span3">
+                <div class="thumbnail">
+                  <a href="../img/month2week4_4.jpg" data-lightbox="month2week4" data-title="Not a bomb"><img src="../img/month2week4_4.jpg" alt=""></a>
+                  <p>Not a bomb</p>
+                </div>
+              </li>
+            </ul>
+            </div>
+<hr>
+                 
+               <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li class="active"><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu">
+                 <ul class="pager">
+                  <li><a href="sandwichMonth1.html">Prev</a></li>
+                  <li><strong>August 2014</strong></li> 
+                  <li><a href="sandwichMonth3.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 17%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

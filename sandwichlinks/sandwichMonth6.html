@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+                 
+                 var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1 </h3>
+             <h4><a href="#" id="week1">Meeting Head of ISIS Department ++ XmlNode Class</a></h4>      
+                 I finally got to meet the Head of ISIS Department.. Here I got to know him and the department better and he got to know a bit more about me. <br><br>     
+                     <strong>XmlNode</strong><br>
+                     For the remaining part of the week, I worked on fixing bugs on some of the systems my team developed. One in particular isn't yet available for users, but it is expected to be available to users soon - but it had a Maths calculation error. To tackle this task, there was a need to read data from a Sharepoint List on a Sharepoint site for usage on ASP.NET and C# project. I had to build the structure of the data from Sharepoint into XmlNodes class. And then the processed data was saved back into a Sharepoint List. This gave me the opportunity to have a play with OCML Technology.
+                 </p>
+                 <hr>
+                              
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Student Interviews ++ Christmas Lunch</a></h4>  
+                 <p>
+                <strong>Student Interviews</strong><br>
+                Two days this week was dedicated to helping out with the interviews that were going on on-site. Students that are looking to do a placement year at STFC next year were present.
+                     <br><br>
+                     There was also a Christmas lunch at the end of the week which involved having Christmas lunch with other students on site and also with fellow staff and colleagues..
+                 </p>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+         
+             <h4><a href="#" id="week3">Making Sure The Final Steps of the Main Web Application is Done before The New Year</a></h4>    
+                <p>
+                    The main application myself and my team were working on had finishing touches applied to it in order for it to be ready for full release and usage in the new year. This involved manually having to put certain users into certain roles and team. This required using some setup pages that we had built into the system to make some of these changes and also actually typing SQL scripts that make certain changes on the database.
+                 </p>       
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">CHRISTMAS BREAK</a></h4>
+<hr>
+                 
+               <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li class="active"><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth5.html">Prev</a></li>
+                  <li><strong>December 2014</strong></li> 
+                  <li><a href="sandwichMonth7.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 50%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

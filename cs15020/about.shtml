@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="mycss.css"/>
+<title>My WriteUp </title>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header"><img src = "me.jpg" alt="banner"/>
+</div>
+
+<div id = "menu">
+<br/>
+<!--#include virtual="menu.html" -->
+
+</div>
+
+<div id = "mainArea">
+<h4>What I did?</h4>
+
+<p>In designing this website, I made sure I followed the requirement specification by making the webpages to be of Doctype, 
+“xHTML 1.0 Strict”. In doing this, I was able to fully design and style the webpages using CSS 3.<br/>
+On the main page, there is a request for the web user’s name. When the user inputs the make and clicks on submit button, 
+the user would be greeted as appropriate depending on the time of the day. There is also a “declaration of originality” 
+and “Disclaimer” section. I created a page that has a HTML formatted copy of my CV. I used CSS in formatting this page. 
+I also used a menu system in order to navigate around the CV.
+</p>
+<h4>How I approached this project? </h4>
+<p>I started by creating a Cascading Style Sheet that divided the index webpage into sections as appropriate 
+using the DIV tag. The sections included the header, the menu area, the main area and the footer. 
+I designed a banner as an image for the header section; a menu system that linked with my previous work, 
+my blog and my well formatted CV was also created and placed on every page using Server Side Include (SSI). 
+I used JavaScript on the footer sections of the webpages to show when a page was last modified.</p>
+
+<h4>Problems you encountered?</h4>
+<p>I an effort to get the website validated, 
+I struggling in understand and fixing an error that had to do with my webpages being “.shtml” files because I used SSI.
+</p>
+
+<h4>How I solved the problem?</h4>
+<p>After carefully going through my code, I realised the pages I was including using SSI had tags like HTML and HEAD, 
+after getting rid of this and leaving only the imprtant bit of the code, I revalidated the website and it passed.  
+</p>
+
+<h4>Browser versions I used for testing?</h4>
+<p>I used FireFox, Internet Explorer and Chrome for testing the webpages.</p>
+<br/>
+</div>
+
+<div id="footer">
+<p>This page was last modified on: 
+<script type="text/javascript">
+<!--
+ document.write(document.lastModified);
+-->
+</script>
+</p>
+
+</div>
+
+</div>
+</body>
+
+
+</html>

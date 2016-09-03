@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Olu Ashiru"/>
+<meta name="author" content="Olu Ashiru"/>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Consolidated Fishing Association - Add New Batch</title>
+
+</head>
+
+<body>
+
+
+<div id="container">
+<div id="headerSide">
+<p class="makeWhite">Logged In: <a class="button" href="index.html">Click to Log Out</a></p>
+<input type="text" value=""><a class="button" href="#">Search</a>    </div>
+    
+<header>
+<h1>Consolidated Fishing Association</h1>
+<h4>Representing Over 100 Fishermen</h4>
+</header>
+
+<nav>
+<br/>
+
+<table>
+<tr>
+<td><a href = "fishermanHome.html" class = "normal">Home</a></td></tr>
+<tr>
+<td><a href = "fishermanAddInput.html" class = "normal">Add New Batch</a></td></tr>
+<tr>
+<td><a href = "fishermanViewBatches.html" class = "normal">View Batches</a></td></tr>
+        <tr>
+<td><a href = "fishermanComplaint.html" class = "normal">Send A Report</a></td></tr>
+<tr>
+<td><a href = "index.html" class = "normal">Logout</a></td></tr>
+</table>
+
+</nav>
+
+<section id="subnav">
+    <a href="fishermanHome.html" class="makeBlue">Fisherman</a> | Fish Batch Input Form
+    
+        <div style="float:right;"><a href="fishermanViewBatches.html" class="button">View My Submitted Batches</a>
+</section>
+    
+<section id = "mainArea">
+    
+<script>
+function myFunction()
+{
+var r=confirm("Batch Added!\n Do you want to print label?");
+if (r==true)
+  {
+   location.href='fishermanHome.html';
+  }
+else
+  {
+  location.href='fishermanHome.html';
+  }
+}
+</script>
+    
+        <input type="checkbox"> Show Onscreen Keyboard 
+        <br/>
+        <br/>
+        <form>
+
+            <table>        
+        <tr><td></td><td><strong>Fish Batch Input Form<strong></td></tr>
+            <tr><td>Number of Crates: </td><td><input type="number" value="0" autocomplete="off"></td></tr>
+            <tr><td>Species: </td><td><select>
+  <option value="...">Select Species ...</option>
+  <option value="carp">Carp</option>
+  <option value="cat">Cat</option>
+  <option value="boxFish">BoxFish</option>
+</select></td></tr>
+            <tr><td>Size Category: </td><td><select>
+  <option value="...">Select Size ...</option>
+  <option value="s">S</option>
+  <option value="m">M</option>
+  <option value="l">L</option>
+</select></td></tr>
+            <tr><td>Total Weight (kg): </td><td><input type="number" value="0" autocomplete="off"></td></tr>
+            <tr><td></td><td><a class="button" href = "#" onclick="myFunction()">Add Batch</a></td></tr>
+        </table>
+        </form>
+
+
+</section>
+
+<footer>
+</footer>
+
+</div>
+</body>
+
+</html>

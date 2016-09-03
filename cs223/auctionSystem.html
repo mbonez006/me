@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Olu Ashiru"/>
+<meta name="author" content="Olu Ashiru"/>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Consolidated Fishing Association - Buyer Auction</title>
+    
+</head>
+
+<body>
+<script>
+    
+    var bid;
+    var bidLimit;
+    
+    function getBid(theId){
+        bid = document.getElementById(theId).innerHTML;
+        console.log(bid);
+    }
+    
+    function setBidLimit(limit){
+        bidLimit = limit;
+    }
+    
+    function isBid1Ok(){
+        if(bid >= bidLimit){
+            alert("Sufficient Bid, Bid Placed");
+        }
+        else{
+            alert("Insufficient Bid, Bid should be atleast £" + bidLimit);
+        }
+    
+    }
+</script>
+
+<div id="container">
+<div id="headerSide">
+<p class="makeWhite">Logged In: <a class="button" href="index.html">Click to Log Out</a></p>
+<input type="text" value=""><a class="button" href="#">Search</a>    </div>
+    
+<header>
+<h1>Consolidated Fishing Association</h1>
+<h4>Representing Over 100 Fishermen</h4>
+</header>
+
+<nav>
+<br/>
+
+<table>
+<tr>
+<td><a href = "auctionSystem.html" class = "normal">Homepage</a></td></tr>
+<tr>
+<td><a href = "buyerViewBids.html" class = "normal">View My Bids</a></td></tr>
+<tr>
+<td><a href = "index.html" class = "normal">Logout</a></td></tr>
+</table>
+
+</nav>
+
+<section id="subnav">
+    <a href="staffViewBatch.html" class="makeBlue">Buyer</a> | Auction
+    <div style="float:right;">
+<a href="buyerViewBids.html" class="button">View My Bids</a>
+    </div>
+</section>
+        
+<section id = "mainArea">
+    <br/>
+    <div class="CSSTableGenerator" >
+    <table>
+        <tr><td><strong>Lot Details</strong></td><td><strong>Bids</strong></td><td><strong>Auction</strong></td></tr>
+        <tr>
+            <td>
+                <strong>Lot 1</strong><br/>
+                Species: Carp <br/>
+                Size Category: M <br/>
+                Number of Crates: 4 <br/>
+                Total Weight (kg): 40                       
+            </td>
+            
+            <td>
+                Buyer A: £80<br/>
+                Buyer D: £60<br/>
+                Buyer C: £50<br/>
+                Buyer B: £30<br/>
+            </td>
+            <td>
+                Time Left: 3h 14m 39s<br/>
+                 (14 Apr, 2014 08:57:20 BST)<br/>
+                Current Bid: £80 <br/>
+                <br/>
+                <input type="number" id = "bid1" autocomplete="off"/><br/>
+                <h5>(Enter £81.00 or more)<h5><br/>
+                <a href="#" class="button" onclick="alert('Bid Placed Successfully!')">Place Bid </a>
+                
+            </td>
+        </tr>
+                 <tr>
+            <td>
+                <strong>Lot 2</strong><br/>
+                Species: Cat Fish <br/>
+                Size Category: M <br/>
+                Number of Crates: 4 <br/>
+                Total Weight (kg): 40                       
+            </td>
+            
+            <td>
+                Buyer A: £40<br/>
+                Buyer D: £30<br/>
+                Buyer C: £22<br/>
+                Buyer B: £20<br/>
+            </td>
+            <td>
+                Time Left: 1h 14m 39s<br/>
+                 (14 Apr, 2014 08:57:20 BST)<br/>
+                Current Bid: £40 <br/>
+                <br/>
+                <input type="number" autocomplete="off"/><br/>
+                <h5>(Enter £40.00 or more)<h5><br/>
+                <a href="#" class="button" onclick="alert('Bid Placed Successfully!')">Place Bid </a>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Lot 3</strong><br/>
+                Species: Gold <br/>
+                Size Category: S <br/>
+                Number of Crates: 4 <br/>
+                Total Weight (kg): 120                       
+            </td>
+            
+            <td>
+                Buyer A: £280<br/>
+                Buyer D: £160<br/>
+                Buyer C: £150<br/>
+                Buyer B: £130<br/>
+            </td>
+            <td>
+                Time Left: 2h 10m 00s<br/>
+                 (14 Apr, 2014 08:57:20 BST)<br/>
+                Current Bid: £80 <br/>
+                <br/>
+                <input type="number" autocomplete="off"/><br/>
+                <h5>(Enter £280.00 or more)<h5><br/>
+                <a href="#" class="button" onclick="alert('Bid Placed Successfully!')">Place Bid </a>
+                
+            </td>
+        </tr>
+    </table>    
+    </div>
+</section>
+
+<footer>
+</footer>
+
+</div>
+</body>
+
+</html>

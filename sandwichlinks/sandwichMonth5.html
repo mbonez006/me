@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+                 
+                 var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1 </h3>
+             <h4><a href="#" id="week1">Setting Up A New Pop-Up Page On The Scheduler</a></h4>
+                              
+             <p>This week, I was mainly working on adding a pop-up page to the scheduler application that I was involved in developing. I managed to add a pop-up page that shows email templates for each email check-box option.</p> 
+                 <hr>
+                              
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Rosetta - Philea Lander ++ Computing Group Meeting ++ TRY IT OUT DAY</a></h4>  
+                 <p>
+                <strong>Computing Group Meeting</strong><br>
+                 I attended the monthly computing group meeting this week. It was insightful especially after he guy that gave a talk shed more light on what the "RAL Space" department of STFC actually does, shed some more light on RAL Space's involvement with Rosetta - Philea Lander.<br><br>
+                 <strong>Try It Out Day</strong><br>
+                 Every member of my team spent the Monday of this week trying out a technology or two that isn't used in our day-to-day job. <br>
+                 I tried a technology known as "JMeter" - for load and performance testing, and also Java OpenCV (Open Source Computer Vision) - for Image Processing in Java</p>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+             <h4><a href="#" id="week3">Holiday In Leeds</a></h4>    
+                <p>
+                 </p>       
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">Bug Fix on Scheduler ++ SOTW</a></h4>    
+                 <p>This week, I was working on some tickets that has to do with fixing some bugs on the Scheduler application.
+                 <br><br><strong>Supporter Of The Week (SOTW)</strong><br>
+                     It was my turn to support the users of our application. Not a very busy week, but it still involved me having to show quick problem solving skills in order to resolve one issue or the other.
+                 </p>                                     
+             <div id = "images4">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                        <a href="../img/month5week4_1.png" data-lightbox="month5week4" data-title="Old website on Left, New Website on Right"><img src="../img/month5week4_1.png" alt=""></a>
+                    </div>
+                  </li>
+                 </ul>
+            </div>
+<hr>
+                 
+               <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li class="active"><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth4.html">Prev</a></li>
+                  <li><strong>November 2014</strong></li> 
+                  <li><a href="sandwichMonth6.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 42%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

@@ -1,0 +1,11 @@
+#showImage{
+    text-align: center;
+}
+.anchorMenu{
+    position: fixed;
+    top: auto;
+    right: 50px;
+    z-index: 5;
+    overflow: hidden;
+    padding-top: 0px;
+}

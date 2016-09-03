@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robo Goalie Soccer Game</title>
+    <link rel="stylesheet" type="text/css" href="ftw.css" />
+</head>
+<body onLoad="preload_game()">
+
+<div id="container">
+<h2>Game for CS25210 Assignment - ola</h2>
+    
+    <!-- Using two canvas, one to hold the background of the game and the other to hold the foreground events of the game -->
+<div style="position: relative;">
+    <canvas id="game" width="1000" height="600"
+            style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+    <canvas id="bg" width="1000" height="600"
+            style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+</div>
+
+    <script type="text/javascript" src="player_control.js"></script>
+    <script type="text/javascript" src="game_initialiser_and_ender.js"></script>
+    <script type="text/javascript" src="drawer.js"></script>
+    <script type="text/javascript" src="main_game.js"></script>
+    <script type="text/javascript" src="level_controller.js"></script>
+    
+</div>
+</body>
+<html>

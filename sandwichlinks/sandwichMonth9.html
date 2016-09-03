@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+                 
+                 var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1 </h3>
+             <h4><a href="#" id="week1">JQuery Conference, Divisional Meeting, Created Web Components </a></h4>
+                    <p>Listed below are the key things I was involved with doing this week..</p>
+                    <dl>
+                        <dt>Jquery Conference</dt>
+                            <dd>So I attended a Jquery conference in Oxford Kings Centre. There were lots of amazing talks on front-end web development (Videos available on <a href="http://jqueryuk.com/2015/videos.php" target="_blank">http://jqueryuk.com/2015/videos.php </a>)  </dd>
+                        <dt>Divisional Meeting</dt>
+                            <dd>I was able to attend a divisional meeting that only occurs once a year. The last one was just before I started working for ISIS RAL. The meeting was very informative in regards to knowing more about what has been going on in the division (level up "department").</dd>
+                        <dt>Created Web Components</dt>
+                            <dd>This week I also worked on creating some of the components of the new web project the team is embarking on.. So an example component might be to create a carousel image slider that can be dynamically populated with images of any amount and from anywhere, etc.</dd>                            
+                    </dl>
+                 <hr>
+<!-- WEEK 2 -->
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Created More Web Components, Tutorials On Using REST API, Sharepoint 2013</a></h4>  
+                    <p>Listed below are the key things I was involved with doing this week..</p>
+                    <dl>
+                        <dt>Created More Web Components</dt>
+                            <dd>This week I created more components for the new web project the team is embarking on..</dd>
+                        <dt>Watched Tutorials On Using REST API To Interact with Sharepoint 2013 sites</dt>
+                            <dd>This week I also spent a number of hours learning about how REST API can be used to interact with Sharepoint sites, getting details about a library in sharepoint, getting the library contents (all via REST API URL / oData), and being able to use this information elsewhere on the Sharepoint site... </dd>
+                    </dl>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+         
+             <h4><a href="#" id="week3">MockUp For Science Interaction Sites, Sharepoint 2013</a></h4>   
+             <p>Listed below are the key things I was involved with doing this week..</p>
+                <dl> 
+                    <dt>MockUp For Science Interaction Sites</dt>
+                        <dd>I spent time this week drawing mock-ups for the new set of Science Interaction sites the team will soon be embarking on building. These mock-ups were drawn so that they can be shown to each of the sites (P.S, there are more than 10 sites), and they can then say if they're satisfied with the design or if it needs to be updated with changes here and there.</dd>
+                    <dt>Sharepoint 2013 On Windows Server 2012 on Virtual Box</dt>
+                        <dd> This week, I took more time to do more with Sharepoint 2013. I took time to learn about how everything links together in order to be able to develop a Sharepoint solution. So I investigated creating Web Applications, Site Collections, sites, pages, Layouts, content types, columns, etc etc.
+                        <br>
+                        Also, due to the nature of how a page can be created by a user in Sharepoint, the typical (shorter route) to create a new page will not ask the user to select a layout (It just uses a default layout) - which isn't what we want in our team, we want the user to be able to select what layout they want...or for the system to at-least be smart enough to guess and use the appropriate layout based on the name that a new page is given. So I took more time to investigate this, firstly looking at how to change a default layout, and then looking at the possibility of using "Sharepoint Content Organiser", and rules and setting up Sharepoint Workflows...in order to be able to dynamically use an appropriate layout based on the naming of a new page.</dd>
+                </dl>
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">Supporter Of The Week</a></h4>  
+                <dl> 
+                    <dt>Supporter Of The Week</dt>
+                        <dd>
+                        It turned out to be a busy of supporting the users of our software.
+                        While I was on support, I Worked On An Application That Downloads a BLlob file From Oracle DB, renames it, and sends it to a Sharepoint library, and then update another Sharepoint list that has links that points to the appropriate file in the Sharepoint Library. While doing this, I was able to learn about what DB "Views" are, I also learn about why/when I should or shouldn't consider using them.<br><br>
+                        I also worked on some legacy Microsoft Access application (with its VB code) that wasn't doing what it was supposed to do only to discover that this was because the Assess application required the user to visit a certain sharepoint site/link that the application was looking to use, and it required the user to first visit the site using Internet Explorer, and provide authentication.<br><br>
+                        They also worked on debugging and solving some problems that were occurring on some of our live web applications.
+                        </dd>
+                </dl>  
+                <hr>                 
+
+                <div class="pagination pagination-large">
+                    <ul>
+                    <li><a href="sandwichMonth1.html">July</a></li>
+                    <li><a href="sandwichMonth2.html">August</a></li>
+                    <li><a href="sandwichMonth3.html">September</a></li>
+                    <li><a href="sandwichMonth4.html">October</a></li>
+                    <li><a href="sandwichMonth5.html">November</a></li>
+                    <li><a href="sandwichMonth6.html">December</a></li>
+                    <li><a href="sandwichMonth7.html">January</a></li>
+                    <li><a href="sandwichMonth8.html">February</a></li>
+                    <li class="active"><a href="sandwichMonth9.html">March</a></li>
+                    <li><a href="sandwichMonth10.html">April</a></li>
+                    <li><a href="sandwichMonth11.html">May</a></li>
+                    <li><a href="sandwichMonth12.html">June</a></li>                          
+                    </ul>
+                </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth8.html">Prev</a></li>
+                  <li><strong>March 2015</strong></li> 
+                  <li><a href="sandwichMonth10.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 75%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

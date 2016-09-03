@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+            
+                var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1</h3>
+             <h4><a href="#" id="week1">Adding Functionality to Web Application ++ Synchrotron Tour</a></h4>
+             
+             <p>This week, I was mainly working on adding a functionality to my team's latest Software (The Scheduler) - I was specifically adding a "ManageTeams" page that will be used to manage the teams that will be using the Scheduler application.
+                 <br> In implementing this, I wrote back-end (Java) code that includes web methods (SOAP) - this created the opportunity for me to learn more about web methods and gatekeepers. I also had to interact with the database from the Java code, so I was able to learn more in regards to JPA (Java Persistence API) - Using Entity Manager, persisting data, etc. 
+                 <br> I also wrote front-end code in order to display results and handle the "team management" of the application. I used ASP.NET and Telerik tags - which provided me with the opportunity to learn more about interacting with telerik tags such as "RadListBox", and ASP.NET tags such as "DropDownList".
+                 <br>To start this, I initially had to draw a mockup of what the page will look like. And was able to complete this task at the end of the week. <br><br>
+                 <strong>Synchrotron Tour</strong><br>
+                 This week, I had a 1 hour Synchrotron Tour for one of ISIS' target station... Check the images below</p>
+             
+                 
+             <div id = "images1">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                      <a href="../img/month4week1_1.jpg" data-lightbox="month4week1"><img src="../img/month4week1_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+                 <hr>
+                              
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Completing the Web App Functionality from Week 3 [Writing Unit Test] ++ Computing Group Meeting</a></h4>    
+            <p>The functionality to manage teams in the scheduler application was finished this week. <br>I wrote Junit Test for the new methods I wrote. (Using JMockit).<br><br>
+                <strong>Computing Group Meeting</strong><br>
+                 I attended the monthly computing group meeting this week. It was insightful especially after he guy that gave a talk shed more light on what the "RAL Space" department of STFC actually does and how they use software in their day to day activities.<br><br>
+                 <strong>Matt Tallyn Left</strong><br>
+                 One of the most experience staff in my team left for better pastures in London this week.</p>
+             <div id = "images2">
+                 <ul class="thumbnails">
+                  <li class="span4">
+                    <div class="thumbnail">
+                        <a href="../img/month4week2_1.jpg" data-lightbox="month4week2" data-title=""><img src="../img/month4week2_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+                 <li class="span4">
+                    <div class="thumbnail">
+                      <a href="../img/month4week2_2.jpg" data-lightbox="month4week2"><img src="../img/month4week2_2.jpg" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="span4">
+                    <div class="thumbnail">
+                      <a href="../img/month4week2_3.jpg" data-lightbox="month4week2"><img src="../img/month4week2_3.jpg" alt=""></a>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+             <h4><a href="#" id="week3">Integration Test ++ Sharepoint 2013 on Virtual Box</a></h4>    
+                 <p>I was able to learn about Integration Test this week. I wrote a few Integration tests for the web server methods I had written previously while adding the "Teams management" functionality
+                     <br><br><strong>Sharepoint 2013</strong><br>
+                     I was able to take a significant amount of time setting up and installing Sharepoint 2013 on a virtual machine. This involved installing all the prerequisites such as an OS (windows 8), SQL Server 2012, etc.
+                     This took some time but was pleased at the end. It's kinda interesting working on a virtual environment
+                 </p>                   
+                                  
+             <div id = "images3">
+                 <ul class="thumbnails">
+                  <li class="span4">
+                    <div class="thumbnail">
+                        <a href="../img/month4week3_1.jpg" data-lightbox="month4week3"><img src="../img/month4week3_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+                 <li class="span4">
+                    <div class="thumbnail">
+                        <a href="../img/month4week3_2.jpg" data-lightbox="month4week3"><img src="../img/month4week3_2.jpg" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="span4">
+                    <div class="thumbnail">
+                        <a href="../img/month4week3_3.jpg" data-lightbox="month4week3"><img src="../img/month4week3_3.jpg" alt=""></a>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+                 
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">Released Software To Production [Jenkins] ++ Custom Page layout On Sharepoint 2013 ++ SOTW</a></h4>    
+                 <p>I was able to release my team's main application to production for the first time. This required extra checking of things (e.g Database scripts that runs running, etc) and also required extra caution.
+                 <br>I carried out the deployment of the application using Jenkins (our continuous Integration System).
+                 
+                     <br><br><strong>Custom Page layout On Sharepoint 2013</strong><br>
+                 After installing Sharepoint 2013, my task was then to read tutorials and basically have a good go at how customising a site, web-pages, master pages, layout pages, and making them all fit into each other - hence designing them appropriately on Sharepoint 2013 - that was initially not easy for me to get my head around, but then it became clear and fun!
+                 <br><br><strong>Supporter Of The Week (SOTW)</strong><br>
+                     It was my turn to support the users of our application. Not a very busy week, but it still involved me having to show quick problem solving skills in order to resolve one issue or the other. I also had to write a couple of fancy SQL scripts.
+                 </p>   
+                 
+                 
+             <div id = "images4">
+                 <ul class="thumbnails">
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month4week4_1.jpg" data-lightbox="month4week4"><img src="../img/month4week4_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+                 <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month4week4_2.jpg" data-lightbox="month4week4" data-title="This is used to check if someone has got a certain amount of radiation"><img src="../img/month4week4_2.jpg" alt=""></a>
+                      <p>This is used to check if someone has got a certain amount of radiation</p>
+                    </div>
+                  </li>
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month4week4_3.jpg" data-lightbox="month4week4" data-title="My Team came second at Geronimo - This is a machine that will sheild a egg drop from a heighty place - build using straw, paper plate, etc"><img src="../img/month4week4_3.jpg" alt=""></a>
+                      <p>My Team came second at Geronimo - This is a machine that will sheild a egg drop from a heighty place - build using straw, paper plate, etc</p>
+                    </div>
+                  </li>
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month4week4_4.jpg" data-lightbox="month4week4" data-title="Another view of the egg machine"><img src="../img/month4week4_4.jpg" alt=""></a>
+                      <p>Another view of the egg machine</p>
+                    </div>
+                  </li>                     
+            </ul>
+            </div>
+<hr>
+                 
+               <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li class="active"><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth3.html">Prev</a></li>
+                  <li><strong>October 2014</strong></li> 
+                  <li><a href="sandwichMonth5.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 33%;"></div>
+                </div>
+
+                 <ul id-"navigationList" class="nav nav-tabs nav-stacked">
+                 <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                 <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                 <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                 <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                     </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

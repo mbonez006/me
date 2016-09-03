@@ -1,0 +1,286 @@
+/*Setting the HTML5 new elements as blocks */
+header, footer, aside, nav, article {  
+    display: block;  
+} 
+
+/*Setting the navigation to stick to the right of the page*/
+nav{
+    float: right;
+    width: 150px;
+}
+
+/*This is meant to be just below the navigation*/
+aside{
+    float: right;
+    width: 150px;
+    display: table-cell;
+}
+
+article{
+	font-size: 15px;
+}
+
+/*This is where everything in the main area of all the pages reside
+Its width is set here and it s margin-top is set to 85 since the header is fixed
+and we dont want the fixed header covering other content*/
+#container{
+	width: 850px;
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 85px;
+	overflow: hidden;
+}
+
+/*This is for the sake of a few pages that'll be better off without a fixed header*/
+#non_fixed_header{
+	position: absolute;
+    height: 85px;
+	left: 0;
+	top: 0;
+    width: 100%;
+	background-color: brown;
+}
+
+/*This is for the sake of a few pages that'll be better off without a fixed header*/
+#non_fixed_container{
+	width: 850px;
+	margin: 0 auto;
+	margin-top: 85px;
+	text-align: left;
+	overflow: hidden;
+}
+
+/*Specifying details about the header*/
+header {
+	position: fixed;
+    height: 85px;
+	left: 0;
+	top: 0;
+    width:100%;
+	background-color: brown;
+}
+
+#headerLogo{
+/*	padding-top: 5px;*/
+	float: left;
+/*	width: 650px;	*/
+padding-left: 17%;
+}
+
+/*Setting the side of the header up*/
+#headerSide{
+    float: right; 
+    padding-right: 20%;
+	height: 85px;
+}
+
+/*Setting the side of the header up*/
+#headerSide a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+}
+
+/*The anchor menu - Its the fixed navigation*/
+#anchorMenu{
+	position: fixed;
+	top: auto;
+	width: 8em;
+	left: auto;
+	margin: -2.5em 0 0 0;
+   	z-index: 5;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+#anchorMenu table{
+	background-color: black;
+}
+
+/*Setting the main area up*/
+#mainArea{
+	padding-top: 5px;
+	float: left;
+	width: 650px;
+}
+
+#images img{
+	margin: 3px 0;  
+	-webkit-box-shadow: 3px 3px 7px #777; 
+	width: 320;
+	height: 180; 
+}
+
+footer{
+	float: left;
+	font-size: 12px;
+	width: 100%;
+}
+
+body{
+	text-align: center;
+	font-family: arial;
+	background-color: #F2F2F2;
+}
+
+
+/*Setting the links, its colors, background colors, etc*/
+a{
+	text-decoration:none;
+	color:brown;
+}
+
+/*Setting the links, its colors, background colors, etc*/
+a.normal:link, a.normal:visited {
+	display: block;
+	color: white;
+	background-color:brown;	
+	text-decoration:none;
+	width: 150px;
+	text-align: left;
+	padding: 3px;
+}   
+
+/*Setting the links, its colors, background colors, etc*/
+a.normal:hover, a.normal:active {
+	color:rgb(41,136,126);
+	background-color: #EBEBE6;
+}
+
+/*Setting the links, its colors, background colors, etc*/
+a.anchor:link, a.anchor:visited {
+	display: block;
+	color: white;
+	background-color:#A3A3A3;
+	text-decoration:none;
+	width: 150px;
+	text-align: left;
+	padding: 3px;
+} 
+
+/*Setting the links, its colors, background colors, etc*/
+a:hover.anchor, a:active.anchor {
+	color:rgb(41,136,126);
+	background-color: #EBEBE6;
+}
+
+/*Setting a margin for a couple of headings elements*/
+h2, h4{
+	margin: 10px;
+}
+
+nav ul, aside ul{
+	font-size: 15px;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+table{
+	border:0px solid black;
+	text-align: left;
+}
+
+
+td.padded{
+	border:0px solid black;
+	padding: 0px 0px 38px 0px;
+	width:25%
+}
+
+h3.headings{
+	text-align: left;
+	
+}
+
+h4.subHead{
+	text-align:left;
+}
+
+p{
+	text-align:left;
+	font-size: 15px;
+}
+
+p.profile{
+	text-align:left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.padded{
+	padding-left: 110px;
+}
+
+
+/*Setting up the table that would out data that's been read
+from the database*/
+#storeTable table, #testTable table { 
+	border-collapse: collapse; 
+	text-align: left; 
+	width: 100%; 
+	background-repeat: no-repeat;
+	background-position: center;
+	border-spacing:0;
+} 
+
+/*Setting up the table that would out data that's been read
+from the database*/
+#storeTable, #testTable table {
+	font: 15px Arial, Helvetica, sans-serif; 
+	background: #fff; 
+	overflow: hidden; 
+	border: 1px solid #A65B1A; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px; 
+}
+
+/*Setting up the table that would out data that's been read
+from the database*/
+#storeTable table td, #storeTable table th, #storeTable table tfoot{ 
+	padding: 3px 3px; 
+	vertical-align:top;
+}
+
+#storeTable img{
+	-webkit-box-shadow: 3px 3px 7px #777; 
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#storeTable p{
+	color: brown;
+	margin: 0;
+}
+
+#storeTable input[type="checkbox"]
+{
+	background-color:yellow;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Setting up the test table that displays the test plan for the website*/
+#testTable table td, #testTable table th, #testTable table tfoot { 
+	padding: 4px 4px; 
+}
+
+#storeTable table th, #testTable table th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #C7C1C1), color-stop(1, #8C0404) );
+	background:-moz-linear-gradient( center top, #C7C1C1 5%, #8C0404 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#C7C1C1', endColorstr='#8C0404');
+	background-color:#C7C1C1; 
+	color:#FFFFFF; 
+	font-size: 15px; 
+	font-weight: bold; 
+	border-left: 1px solid #A8A8A8;
+} 
+
+#storeTable table tfoot, #testTable table tfoot{
+	background-color: #F8F8F8;
+	
+}

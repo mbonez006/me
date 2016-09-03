@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Olu Ashiru"/>
+<meta name="author" content="Olu Ashiru"/>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Consolidated Fishing Association - View Available Batch</title>
+
+</head>
+
+<body>
+
+
+<div id="container">
+
+    <div id="headerSide">
+<p class="makeWhite">Logged In: <a class="button" href="index.html">Click to Log Out</a></p>
+<input type="text" value=""><a class="button" href="#">Search</a>    </div>
+    
+<header>
+<h1>Consolidated Fishing Association</h1>
+<h4>Representing Over 100 Fishermen</h4>
+</header>
+
+<nav>
+<br/>
+
+<table>
+<tr>
+<td><a href = "staffViewBatch.html" class = "normal">Home</a></td></tr>
+<tr>
+<td><a href = "staffViewBatch.html" class = "normal">View Available Batch</a></td></tr>
+<tr>
+<td><a href = "index.html" class = "normal">Logout</a></td></tr>
+</table>
+
+</nav>
+
+<section id="subnav">
+    <a href="staffViewBatch.html" class="makeBlue">Warehouse Staff</a> | Available Batch
+</section>
+    
+<section id = "mainArea">
+    <br/>
+    <h2>Available And Unallotted Batched</h2>
+    <a href="#">1</a> | <a href="#">2</a> | <a class="button" href="#">Next</a> 
+
+    <div style="float:right;">
+<select>
+  <option value="...">Sort ...</option>
+  <option value="size">Sort by Size</option>
+  <option value="weight">Sort by Weight</option>
+  <option value="species">Sort by Species</option>
+</select>
+    </div>
+    <br/>
+    <p class="center"><a href="staffSubmitLot.html" class="button" onclick="alert('Lot Created and made available for auction')">Click to Create Lot</a>
+       </p>
+    <p class="center">*First Select Batches to add to Lot</p>    
+    <hr/>
+    
+    <form>
+        <table>
+        <tr><td><input type="checkbox"></td><td><strong>Batch 1</strong></td></tr>
+            <tr><td></td><td>Number of Crates: 4</td></tr>
+            <tr><td></td><td>Total Weight (kg): 40</td></tr>
+            <tr><td></td><td>Species: Carp </td></tr>
+            <tr><td></td><td>Size Category: L </td></tr>
+        </table>
+        
+        <hr/>
+         <table>
+        <tr><td><input type="checkbox"></td><td><strong>Batch 2</strong></td></tr>
+            <tr><td></td><td>Number of Crates: 4</td></tr>
+            <tr><td></td><td>Total Weight (kg): 40</td></tr>
+            <tr><td></td><td>Species: Carp </td></tr>
+            <tr><td></td><td>Size Category: L </td></tr>
+        </table>
+        
+        <hr/>
+         <table>
+        <tr><td><input type="checkbox"></td><td><strong>Batch 3</strong></td></tr>
+            <tr><td></td><td>Number of Crates: 4</td></tr>
+            <tr><td></td><td>Total Weight (kg): 40</td></tr>
+            <tr><td></td><td>Species: Carp </td></tr>
+            <tr><td></td><td>Size Category: L </td></tr>
+        </table>
+        
+        </form>
+    
+<p class="center"><a href="staffSubmitLot.html" class="button" onclick="alert('Lot Created and made available for auction')">Click to Create Lot</a>
+       </p>
+
+</section>
+
+<footer>
+</footer>
+
+</div>
+</body>
+
+</html>

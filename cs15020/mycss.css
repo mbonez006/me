@@ -1,0 +1,118 @@
+#container{
+	width: 750px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#header {
+    position: relative;
+	top:2px;
+}
+
+#menu{
+    float: left;
+    width: 150px;
+}
+
+#anchorMenu{
+	position: fixed;
+	top: auto;
+	width: 8em;
+	left: auto;
+	margin: -2.5em 0 0 0;
+    z-index: 5;
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+#mainArea{
+	padding-top: 5px;
+    float: left;
+	width: 570px
+}
+
+#footer{
+	clear: both;
+	text-align: center;
+	font-size: 80%;
+	padding-left: 33.3%
+}
+
+body{
+	text-align: center;
+	font-family: arial;
+	background: #FFF;
+	padding: 0;
+}
+
+a:link, a:visited {
+	display: block;
+	color:rgb(41,136,126);
+	text-decoration:none;
+	background-color: #EBEBE6;
+	width: 130px;
+	text-align: left;
+	padding: 3px;
+}   
+
+a:hover, a:active {
+	color: white;
+	background-color:#7A991A;
+}
+
+a:hover.anchor, a:active.anchor {
+	color: white;
+	background-color:brown;
+}
+
+a.w3c{
+	width: 83px;
+}
+
+h2, h4{
+	margin: 8px;
+}
+
+ul li{
+	font-size: 15px;
+}
+
+table{
+	border:0px solid black;
+	text-align: left;
+}
+
+
+td.padded{
+	border:0px solid black;
+	padding: 0px 0px 38px 0px;
+	width:25%
+}
+
+h3.headings{
+	text-align: left;
+	
+}
+
+h4.subHead{
+	text-align:left;
+}
+
+p{
+	text-align:left;
+	font-size: 15px;
+}
+
+p.profile{
+	text-align:left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.center{
+	text-align: center;
+}
+
+.padded{
+	padding-left: 110px;
+}

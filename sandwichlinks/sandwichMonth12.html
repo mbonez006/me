@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+         <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+
+                var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+                 
+                //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            }); 
+        </script>
+            
+		 <style>
+			  ul {         
+				  padding:0 0 0 0;
+				  margin:0 0 0 0;
+			  }
+			  ul li {     
+				  list-style:none;
+				  margin-bottom:25px;           
+			  }
+			  ul li img {
+				  cursor: pointer;
+			  }
+		</style>
+ </head>
+
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1 </h3>
+             <h4><a href="#" id="week1">Staff Recognition Award + Try It Out Day + Sharepoint 2013</a></h4>
+                    <p>Listed below are the key things I was involved with doing this week..</p>
+                    <dl>
+                        <dt>Staff Recognition Award</dt>
+                            <dd>This week, I was <strong>nominated and won</strong> a <strong>Staff Recognition Award!</strong> in my department (STFC ISIS).<br>
+                            This came as a surprised and I actually don't know who nominated me, but the award was for the following category;
+                            <ul>
+                                <li>Those who ‘go the extra mile’</li>
+                                <li>Those who make a difference, whether through a specific idea or with their attitude to work and/or influence on others, or good management / performance in the SHE arena</li>
+                            </ul>
+                            <br>
+                            The award took the form of a £50 Amazon voucher (Click "Show or Hide Image" link on the side to view a picture).<br>
+                            I also received a certificate which the head of department (head of STFC ISIS - Robert McGreevy) presented personally.<br>
+                            The award was also announced publicly on the ISIS Internal Information System and also published in in-Brief (Email Newsletter).
+                            </dd>
+                        <dt>Try It Out Day</dt>
+                            <dd>The team had a Try It Out Day where I got to try out a technology that I had not used before. I spent the day learning and making small programs with <strong>Ruby</strong>. This was interesting... it was particularly interesting seeing the number of ways you can loop through a collection in Ruby.</dd>
+                        <dt>Extended my work Contract for another month</dt>
+                            <dd>So there'll be a "July" blog post because I extended my work contract for another month. This is with the hope that I could spent the time to be more involved with the development phase of the SISItes project I had spent time researching and making prototypes and writing scripts for.</dd>
+                    </dl>
+                    <div id = "images1">
+						<div class="container">
+							<ul class="row">
+								<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+									<a class="thumbnail" href="../img/voucher.jpg" data-lightbox="month12week4" data-title="My £50 amazon voucher!">
+										<img class="img-responsive" src="../img/voucher.jpg" alt="">
+									</a>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+									<a class="thumbnail" href="../img/award.jpg" data-lightbox="month12week4" data-title="Robots!">
+										<img class="img-responsive" src="../img/award.jpg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+                    </div>
+                 <hr>
+<!-- WEEK 2 -->
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Sharepoint 2013- SISites Project - Designing Page Layouts + Students Event Day At Milton Hill </a></h4>  
+                    <p>Listed below are the key things I was involved with doing this week..</p>
+                    <dl>
+                        <dt>Sharepoint 2013- SISites Project - Designing Page Layouts</dt>
+                            <dd>I spent time matching a predesigned-purely-HTML website to be in alignment with a Sharepoint Page Layout. Using Bootstrap, this involved moving Sharepoint site column generated 'div's about, and adding extra tags. The aim for this is to achieve as much as possible with pure HTML and CSS (i.e. without Javascript)  </dd>
+                        <dt>Students Event Day At Milton Hill</dt>
+                            <dd>The students at STFC were away at Milton Hill Hotel for a day. This was an opportunity to learn more about the graduate scheme at STFC and also to learn about career-related topics.</dd>
+                    </dl>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+         
+             <h4><a href="#" id="week3">Battle Bots Hack Day + Sharepoint 2013 Development</a></h4>   
+             <p>Listed below are the key things I was involved with doing this week..</p>
+                <dl> 
+                    <dt>Battle Bots Hack Day</dt>
+                    <dd>STFC would be having an "Open Week" in the second week of July. This would include a major public access day where the entire facility would be open and about 10,000 members of the public are expected to visit the facility.<br> The computing students and graduates of my department decided to build robots that can race/fight each other to use as a demo that would be displayed on the Public Access Open Day (on Saturday 11/07/2015) in order to tell the visitors about ISIS Computing Group.<br>(Click "Show or Hide Image" link on the side to view pictures).<br>
+                    I worked on/programmed a technology known as "Leap Motion" which is used to control the robots by simply using hand gestures..</dd>
+                    <dt>More Sharepoint Development</dt>
+                    <dd>I was one of two main members of the team working on the SISites projects - Migrating Scientific Interaction Websites with from where they currently at, and completely redesigning them to use Sharepoint 2013. So this was a major project! - At this point I was experimenting with using Sharepoint's Web Part Zones and Web Parts (using Snippets) to see if they could be used by a user that is editing a Sharepoint page to select an image from a library!  </dd>
+                </dl>
+                <div id = "images3">
+					<div class="container">
+						<ul class="row">
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/openweekPrep.jpg" data-lightbox="month12week4" data-title="Students/Graduates of the Computing Group setting the robots up!">
+									<img class="img-responsive" src="../img/openweekPrep.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/hackday1.jpg" data-lightbox="month12week4" data-title="Robots!">
+									<img class="img-responsive" src="../img/hackday1.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/hackday2.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/hackday2.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/hackday3.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/hackday3.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/hackday4.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/hackday4.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+                </div>
+                 <hr>
+
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">Harwell Open Week (Giving A Talk) + Picture For Graduate Training Scheme + CV Session With LM</a></h4>  
+             <p>Listed below are the key things I was involved with doing this week..</p>
+                <dl> 
+                    <dt>Give A Talk At The Open Week</dt>
+                    <dd>I was opportune to give a talk to about 30 School kids =on the first day of the Open Week. It was nice telling the kids about myself, what I do at STFC and a bit about my personal story - i.e.e access route to get to where I am currently from what I just finished school.</dd>
+                    <dt>Open Week</dt>
+                    <dd>I'll be helping out at STFC's Open week, being one of the people that man the Computing Group's robot. <br>
+                    Also, my picture was used on the poster for the Graduate Training Scheme and placed at a place where it can be viewed by about 10,000 people that visit STFC that week.
+                    <br>(Click "Show or Hide Image" link on the side to view pictures).<br></dd>
+                    <dt>CV Session</dt>
+                    <dd>My line manager went through a CV and COver letter building session with me, where she discussed what she looks for in CVs and Cover letter - We went through a few examples, and it ended up being an extremely useful session. I took notes which is scanned and is currently in my email waiting for me to open it up when I need to update my CV next!</dd>
+                    <dt>Sharepoint 2013</dt>
+                    <dd>I spent the rest of my placement working on the SISites Sharepoint project, updating Powershell scripts, styling page layouts - (using LESS which gets generated to CSS), and also using JQUERY! - using REST API where necessary</dd>
+                </dl>
+                <div id = "images4">
+					<div class="container">
+						<ul class="row">
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/megradscheme.jpg" data-lightbox="month12week4" data-title="Students/Graduates of the Computing Group setting the robots up!">
+									<img class="img-responsive" src="../img/megradscheme.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/megradscheme2.jpg" data-lightbox="month12week4" data-title="Robots!">
+									<img class="img-responsive" src="../img/megradscheme2.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay1.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay1.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay2.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay2.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay3.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay3.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay4.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay4.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay5.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay5.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay6.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay6.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay7.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay7.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay8.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay8.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay9.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay9.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay10.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay10.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay11.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay11.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay12.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay12.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay13.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay13.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay14.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay14.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay15.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay15.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay16.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay16.jpg" alt="">
+								</a>
+							</li>
+							<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<a class="thumbnail" href="../img/harwellOpenDay17.jpg" data-lightbox="month12week4" data-title="">
+									<img class="img-responsive" src="../img/harwellOpenDay17.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+                <hr>               
+
+            <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li class="active"><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu"> 
+                 <ul class="pager">
+                  <li><a href="sandwichMonth11.html">Prev</a></li>
+                  <li><strong>June 2015</strong></li> 
+                  <li class="disabled"><a href="#">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 100%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                     <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                     <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                     <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                     <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                 </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+ </body>
+</html>

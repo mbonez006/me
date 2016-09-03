@@ -1,0 +1,34 @@
+a:12:{s:8:"encoding";s:5:"UTF-8";s:5:"title";s:18:"osCommerce Add-Ons";s:4:"link";s:25:"http://www.oscommerce.com";s:11:"description";s:29:"osCommerce, Sell With Emotion";s:8:"language";s:2:"en";s:9:"copyright";s:29:"Copyright (c) 2012 osCommerce";s:14:"managingEditor";s:19:"hpdl@oscommerce.com";s:11:"image_title";s:10:"osCommerce";s:9:"image_url";s:53:"http://www.oscommerce.com/images/oscommerce_88x31.gif";s:10:"image_link";s:25:"http://www.oscommerce.com";s:5:"items";a:5:{i:0;a:4:{s:5:"title";s:13:"Products data";s:4:"link";s:38:"http://addons.oscommerce.com/info/8754";s:11:"description";s:13:"Updated Feeds";s:7:"pubDate";s:31:"Mon, 22 Apr 2013 20:35:48 +0200";}i:1;a:4:{s:5:"title";s:17:"Albanian Language";s:4:"link";s:38:"http://addons.oscommerce.com/info/8692";s:11:"description";s:98:"Corrected &amp; updated translation of eCommerce 2.3 in Albanian.<br />
+Translated by Endri Prifti";s:7:"pubDate";s:31:"Mon, 22 Apr 2013 11:10:01 +0200";}i:2;a:4:{s:5:"title";s:32:"Social Login for OsCommerce v2.2";s:4:"link";s:38:"http://addons.oscommerce.com/info/8421";s:11:"description";s:456:"New Enhancements and updates:<br />
+- Add AJAX popup for new user register.<br />
+- Store all user profile data in database.<br />
+- Hybrid sharing in social counter interface.<br />
+- Added avatar as thumbnail.<br />
+- Added functionality for redirection to all site pages.<br />
+- Added feature to display user name in 3 format.<br />
+- Added option to rearrange sharing icons by admin.<br />
+- Implement sharing and counter<br />
+- Added account mapping";s:7:"pubDate";s:31:"Mon, 22 Apr 2013 08:49:02 +0200";}i:3;a:4:{s:5:"title";s:99:"Pop Up customer Stock alert - allow customers to be notified when items back in stock automatically";s:4:"link";s:38:"http://addons.oscommerce.com/info/8750";s:11:"description";s:958:"Update from V1 to V2<br />
+<br />
+The first upgrade I have chenged some locations added a file and added some form checking<br />
+<br />
+** Moved the JS to its own file and added it to the ext / jquery / ui folder<br />
+** Added Email form checking for the form that checks to see first if it is empty then uses REGEX to check its in the right format<br />
+** If the name is left blank it will insert &quot;Guest&quot; into the emails<br />
+** Added stripslashes () to the Product name as the slashes were not escaped when the emails were sent.<br />
+<br />
+To upgreade please upload the following files..<br />
+catalog / product_info.php<br />
+catalog / stylesheet.css<br />
+catalog / includes / application_top.php<br />
+catalog / includes / template_top.php<br />
+add new file<br />
+catalog / ext / jquery / ui / notify_Check.js<br />
+<br />
+Thats it done...<br />
+<br />
+Full Package attached<br />
+Demo site <br />
+http://www.development-server.net/233/";s:7:"pubDate";s:31:"Sun, 21 Apr 2013 22:30:21 +0200";}i:4;a:4:{s:5:"title";s:105:"RC2CA Pop Up customer Stock alert - allow customers to be notified when items back in stock automatically";s:4:"link";s:38:"http://addons.oscommerce.com/info/8753";s:11:"description";s:103:"Demos Site here, All items set to Zero Stock Qty<br />
+<br />
+http://www.development-server.net/22RC2A/";s:7:"pubDate";s:31:"Sun, 21 Apr 2013 21:13:00 +0200";}}s:11:"items_count";i:5;}

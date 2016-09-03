@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <title>Olu Ashiru</title>
+         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../lightbox/js/lightbox.min.js"></script>
+         <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+         <link href="../css/style.css" rel="stylesheet">
+     
+          <script>
+              //toggle images
+             $(document).ready(function(){
+                 $("#images1").hide();
+                 $("#images2").hide();
+                 $("#images3").hide();
+                 $("#images4").hide();
+                $("#showImages").click(function(){
+                    $("#images1").toggle();
+                    $("#images2").toggle();
+                    $("#images3").toggle();
+                    $("#images4").toggle();
+                });
+
+                var screenWidth = screen.width;
+                if(screenWidth < 700){
+                   $("#navigationList").hide(); 
+                }
+            
+                     //update links
+                var week1Header = $("#week1Header").text();
+                var linkString1 = "<strong>" + week1Header + "</strong><br>" + $("#week1").text(); 
+                $("#week1title").html(linkString1);
+
+                var week2Header = $("#week2Header").text();
+                var linkString2 = "<strong>" + week2Header + "</strong><br>" + $("#week2").text(); 
+                $("#week2title").html(linkString2);
+
+                var week3Header = $("#week3Header").text();
+                var linkString3 = "<strong>" + week3Header + "</strong><br>" + $("#week3").text(); 
+                $("#week3title").html(linkString3);
+
+                var week4Header = $("#week4Header").text();
+                var linkString4 = "<strong>" + week4Header + "</strong><br>" + $("#week4").text(); 
+                $("#week4title").html(linkString4);
+            });           
+     </script>
+ </head>
+ <body>
+         
+ <div class="container-fluid">        
+     <div class="row-fluid">
+                <div class="page-header">
+                 <h2>Sean Ashiru</h2>
+                 <p>ola@aber.ac.uk</p>
+     </div><!-- header -->
+
+             <div class="span8">
+            <ul class="nav nav-tabs ">
+                <li>
+                <a href="../index.html">Home</a>
+                </li>
+                <li class="active"><a href="sandwichMonth1.html">Sandwich year Diary</a></li>
+            </ul>
+
+                 
+<!-- WEEK 1 -->                 
+             <h3 id="week1Header">Week 1</h3>
+             <h4><a href="#" id="week1">Testing New Software - Drop In Sessions</a></h4>
+             <p>So the Software that my team has been making before I even started work (which I joined in developing at its latter development stages) finally got released for testing by actual users.
+                 <br>As a result, a drop-in session was organised where, after the users had tested the application, they can drop-in and make complaints or even ask how somethings can be done on the new system.
+                 <br>It was an interesting experience seeing how people (users) that has always been using a certain system before responds to the usage of a new system. 
+                 It was interesting how although a lot of users admitted that the older system was simply out-of-date (Microsoft Access Application..I think it was), but at the same time, some were reluctant to have to learn the use of a web-based new application </p>
+             
+                 
+             <div id = "images1">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                        <a href="../img/month3week1_1.jpg" data-lightbox="month3week1" data-title="During a tour of ISIS Target Station 1 - Specifically, the Synchrotron."><img src="../img/month3week1_1.jpg" alt=""></a>
+                        <p>During a tour of ISIS Target Station 1 - Specifically, the Synchrotron.</p>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+                 <hr>
+                              
+<!-- WEEK 2 -->             
+             <h3 id="week2Header">Week 2</h3>
+             <h4><a href="#" id="week2">Recording Testing Results and Bugs ++ Talk on Intellectual Property (IP)</a></h4>    
+            <p>Recording Testing Results and Bugs - The week was mostly making records of testing results and creating TRAC tickets for every bugs reports, feature requests, etc in regards to the new software. Users mostly got in touch via email<br><br>
+                <strong>Talk on Intellectual Property (IP)</strong><br>
+                I attended a talk on Managing Intellectual Property which was very useful.<br>
+                 </p>     
+                 
+             <div id = "images2">
+                 <ul class="thumbnails">
+                  <li class="span12">
+                    <div class="thumbnail">
+                        <a href="../img/month3week2_1.jpg" data-lightbox="month3week2"><img src="../img/month3week2_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+                 <hr>
+                 
+<!-- WEEK 3 -->             
+             <h3 id="week3Header">Week 3</h3>
+             <h4><a href="#" id="week3">HomePage MakeOver (Dynamic Menu) ++ Python Training ++ STEM Ambassador</a></h4>    
+                 <p><strong>HomePage MakeOver (Dynamic Menu)</strong><br>I had the task of giving the Homepage that points to our other application pages a complete changeover. The task involved having a screen-wide carousel scrolling banner with high resolution images.
+                 The task also involved having menu displayed based on the user's detail and permissions. (Dynamic menu). <br>
+                 I developed a prototype of this mainly using HTML5, Javascript and JQuery (the functionalities of the site required heavy usage of JQuery -- so that was the week I learnt how amazing Jquery can be and how one can quite easily write 400 lines of Jqeury to do something, and someone that knows more about it can tell you how to write the same thing in 10 lines - YES, that actually happened!) <br>
+                 After he prototype, I then went on to start converting the prototype in order for it to fit into the previously written homepage which, like our other web apps has ASP.NET and C# has its front-end.
+                     I used list-view future of ASP.NET for displaying the dynamic menu.
+                     <br>
+                     The site as a whle had to be responsive, so, say HELLO to Twitter Bootstrap!
+                <br><strong>Python Training</strong><br>
+                I was opportune to attend a 3 hours training on "Introducion to Python". Which I found to be quite an interesting language with huge library.
+                <br><strong>STEM Ambassador</strong><br>
+                I attended training and officially became a STEM (Science technology Engineering and Maths) Ambassador - Main aim is to be able to go out on events in a bid to expose younger people to STEM subjects and show/tell them how amazing it can be to be, in my case, a Software Engineer.
+                 </p>  
+             <div id = "images3">
+                 <ul class="thumbnails">
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week3_1.jpg" data-lightbox="month3week3"><img src="../img/month3week3_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+                 <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week3_2.jpg" data-lightbox="month3week3" data-title="An instrument called 'WISH' at ISIS target Station 2 - normally covered at the top"><img src="../img/month3week3_2.jpg" alt=""></a>
+                      <p>An instrument called "WISH" at ISIS target Station 2 - normally covered at the top</p>
+                    </div>
+                  </li>
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week3_3.jpg" data-lightbox="month3week3" data-title="The Main Power house for ISIS Target Station 1 -- One of the few power house"><img src="../img/month3week3_3.jpg" alt=""></a>
+                      <p>The Main Power house for ISIS Target Station 1 -- One of the few power house</p>
+                    </div>
+                  </li>
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week3_4.jpg" data-lightbox="month3week3" data-title="A view of ISIS Synchrotron"><img src="../img/month3week3_4.jpg" alt=""></a>
+                      <p>A view of ISIS Synchrotron</p>
+                    </div>
+                  </li>                     
+            </ul>
+            </div>
+                 
+                 <hr>
+                 
+<!-- WEEK 4 -->             
+             <h3 id="week4Header">Week 4</h3>
+             <h4><a href="#" id="week4">Software Feedback Sessions ++ First Football League Match ++ Geronimo (STFC Early Career Forum)</a></h4>    
+                 <p><strong>Software Feedback Sessions</strong><br>
+                 Myself and the team had series of sessions where the users of the new software that is being trial would come in with their complaints, bugs, feature requests, etc. It was quite interesting seeing this and noting how a users make this request - how some showed frustrations while others showed their excitement and especially how my manager (who anchored each of these meetings) dealt with each situations amazingly well. <br>
+                     The highlight of these must be when a user said a certain feature that's been added wasn't really necessary - This got me thinking of lectures after lectures where someone like Chris Price would keep saying to be careful in regards to "over-featuring" a software for a user... every extra feature is more code which is essentially more money.  
+                     <br><strong>First Football League Match</strong><br>
+                     My facility has a football league going on. So I joined a team (named "Spaced Out Tigers") and I had my first league match during this week (which was fun!).
+                     <br><strong>Geronimo (STFC Early Career Forum)</strong><br>
+                     This was a one day away event where graduates and students at the facility (about 70 of us.. I think) went to a venue in another town (venue owned by STFC - "Cosener's House" in Abingdon). <br>
+                     The day included talks from speaker in different fields of STEM (Science technology Engineering and Maths). Lots of fun group challenges which facilitated team work, communication and yeah, other stuff.
+                     Truth be told, it was a good day! It was great getting to meet other people that we work in the same facility but not the same office or department.
+                 </p>   
+             <div id = "images4">
+                 <ul class="thumbnails">
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week4_1.jpg" data-lightbox="month3week4" data-title="View of Synchrotron"><img src="../img/month3week4_1.jpg" alt=""></a>
+                    </div>
+                  </li>
+                 <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week4_2.jpg" data-lightbox="month3week4" data-title="View of Synchrotron"><img src="../img/month3week4_2.jpg" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week4_3.jpg" data-lightbox="month3week4" data-title="View of A Magnet around the Synchrotron"><img src="../img/month3week4_3.jpg" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="span3">
+                    <div class="thumbnail">
+                        <a href="../img/month3week4_4.jpg" data-lightbox="month3week4" data-title="View of Synchrotron"><img src="../img/month3week4_4.jpg" alt=""></a>
+                    </div>
+                  </li>
+            </ul>
+            </div>
+<hr>
+                 
+               <div class="pagination pagination-large">
+                <ul>
+                <li><a href="sandwichMonth1.html">July</a></li>
+                <li><a href="sandwichMonth2.html">August</a></li>
+                <li class="active"><a href="sandwichMonth3.html">September</a></li>
+                <li><a href="sandwichMonth4.html">October</a></li>
+                <li><a href="sandwichMonth5.html">November</a></li>
+                <li><a href="sandwichMonth6.html">December</a></li>
+                <li><a href="sandwichMonth7.html">January</a></li>
+                <li><a href="sandwichMonth8.html">February</a></li>
+                <li><a href="sandwichMonth9.html">March</a></li>
+                <li><a href="sandwichMonth10.html">April</a></li>
+                <li><a href="sandwichMonth11.html">May</a></li>
+                <li><a href="sandwichMonth12.html">June</a></li>                          
+                </ul>
+            </div>
+
+             </div><!-- .span4 -->
+         
+             <div class="span3 anchorMenu">
+                 <ul class="pager">
+                  <li><a href="sandwichMonth2.html">Prev</a></li>
+                  <li><strong>September 2014</strong></li> 
+                  <li><a href="sandwichMonth4.html">Next</a></li>
+                </ul>
+
+                <div class="progress progress-striped active">
+                  <div class="bar" style="width: 25%;"></div>
+                </div>
+
+                 <ul id="navigationList" class="nav nav-tabs nav-stacked">
+                 <li><a id="week1title" href = "#week1"><strong>Week 1</strong> <br></a></li>
+                 <li><a id="week2title" href = "#week2"><strong>Week 2</strong> <br></a></li>
+                 <li><a id="week3title" href = "#week3"><strong>Week 3</strong> <br></a></li>
+                 <li><a id="week4title" href = "#week4"><strong>Week 4</strong> <br></a></li>
+                     </ul>
+                 
+                 <h4 id="showImage"><button id="showImages" class="btn btn-inverse">Click To Show or Hide Images</button></h4>
+
+             </div><!-- .span4 -->
+    </div><!-- .row -->
+ </div><!-- .container -->
+     
+ </body>
+</html>

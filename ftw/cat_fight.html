@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cat fight</title>
+	</head>
+	<body onLoad="start_game()">
+
+	<h2>A canvas game with cats</h2>
+
+	<canvas id="canvas1" width="700" height="300" style="border:1px dotted" ></canvas>
+
+<p id="p1">
+<!--This is an "empty" paragraph, which we can fill using JavaScript and a call to document.getElementById('p1') if we find we want to write anything on the page-->
+</p> 
+
+
+<script>
+// let's have a couple of global variables.
+var evil_cat_x=100;
+var evil_cat_y=0;
+var cat_x=100;
+var cat_y=100;
+var points=0;
+var number_of_coll = 0;
+
+// let's set up a canvas and a canvas context so we can draw stuff
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+
+// let's add an event listener to the canvas - this will call the function
+// seenmotion whenever the mouse moves. we're going to use this to move
+// katycat about
+mycanv.addEventListener("mousemove",seenmotion,false);
+
+function seenmotion(e) {
+        // if the mouse moves over the canvas
+        // this function will be called - we can then 
+        // update katycat's location on the canvas
+	// from the mouse_event 
+	// and the canvas bounding rectangle
+ 
+        // cat_x and cat_y variables are globals, defined above.
+
+	var bounding_box=mycanv.getBoundingClientRect();
+        cat_x=(e.clientX-bounding_box.left) *
+                             (mycanv.width/bounding_box.width);	
+        cat_y=(e.clientY-bounding_box.top) *
+				(mycanv.height/bounding_box.height);	
+}
+        
+function start_game() {
+// start_game() is called when the page loads (check the body tag above)
+// all it does is set up an interval timer which calls the function game_loop
+// every 50 ms
+        game_id=setInterval(game_loop, 50);
+}
+
+function game_loop() {
+	// this is called every 50ms and is basically a 
+        // frame-redraw-game-animation loop
+
+        //first thing to do each frame is clear the canvas
+        mycanv.width=mycanv.width; 
+
+        // then we'll draw both the cats	
+        draw_katy(cat_x,cat_y); 
+        draw_chris(evil_cat_x,evil_cat_y); 
+        
+        // then we'll update chris_cat's location
+        evil_cat_x++;
+        if (evil_cat_x>mycanv.width) {
+            evil_cat_x=0;
+		}
+        
+        // NOTE: we don't need to update katy-cat's location 
+        // as her position is driven by the mouse moving.
+
+        // if the cats collide you want to do something
+        // THIS IS A GOOD PLACE TO WRITE SOME COLLISION DETECTION
+        // CODE
+        
+
+        if(check_collision()){
+     	   stop_game();
+        }
+        
+        // ALSO YOU MIGHT WANT TO ALTER THE SCORES IF THERE's
+        // A CATFIGHT
+
+
+
+        // let's have a counter for points that's based on
+        // the amount of time katy_cat has existed without 
+        // colliding
+        points+=0.05;//we have a 50ms game loop so points go up
+           // by 0.05 if we want to get a point for every second
+           // alive
+
+        // and let's stick it in the top right. 
+        var integerpoints=Math.floor(points); // make it into an integer
+	ctx.font="bold 24px sans-serif";
+        ctx.fillText(integerpoints, mycanv.width-50, 50);
+}
+
+
+function check_collision(){
+	if (cat_y + 85 < evil_cat_y) return(false);
+	if (cat_y > evil_cat_y + 91) return(false);
+	if (cat_x + 80 < evil_cat_x) return(false);
+	if (cat_x > evil_cat_x + 80) return(false);
+	
+	return true;
+}
+// probably have something to do when we're finished
+function stop_game() {
+	document.getElementById('p1').innerHTML=number_of_coll;
+	number_of_coll++;
+}
+
+function draw_chris(x,y) {
+    var chris_img=new Image();
+    chris_img.src="images/chriscat.png";
+    ctx.drawImage(chris_img,x,y);
+}
+
+
+function draw_katy(x,y) {
+    var katy_img=new Image();
+    katy_img.src="images/katycat.png";
+    ctx.drawImage(katy_img,x,y);
+
+}
+
+
+</script>
+</body>
+</html>

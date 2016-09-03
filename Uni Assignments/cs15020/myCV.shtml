@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="mycss.css"/>
+<title>My CV</title>
+</head>
+<body>
+
+<div id="container">
+
+<div id="header"><img src = "me.jpg" alt="banner"/>
+</div>
+
+<div id = "menu">
+<br/>
+<!--#include virtual="menu.html" -->
+
+<br/>
+<br/>
+<!--#include virtual="anchorMenu.html" -->
+
+</div>
+
+<div id = "mainArea">
+
+<h2 class="center">Oluwaseun (“Sean”) Ashiru</h2>
+<p class="center">Flat 53, Cwrt Mawr, Aberystwyth University, Aberystwyth. SY23 3AN <br />
+07553451500; ola@aber.ac.uk; @oluAshiru; olushares.wordpress.net</p>
+
+<h3 class="headings"><a id="profile">Profile</a></h3>
+<p><strong>Dedicated and highly motivated first year Aberystwyth University student 
+majoring in Computer Science and on track for a first class grade. 
+I naturally have a passion for software and possess good problem solving and solution building skills. 
+Had experience with various programming languages including Java, C++ and Perl. 
+Now seeking work experience in the computing sector. </strong></p>
+
+<h3 class="headings"><a id="skills">Key Achievements and Skills </a></h3> 
+<ul>
+<li> <h4>Teamwork and Organising</h4> Have a deep understanding of the value of teamwork. 
+Have been involved in a team of 2 people working in a mental care home, a team of up to 12 people in a catering setting. 
+Also regularly involved in university group projects with mates, 
+and I play football with a departmental team I put together hence my organisational skills. </li>
+<li> <h4>Communication</h4> Dealt effectively with clients either as a carer or as a catering assistant face to face or over the phone; 
+further developed skills as the university first year’s Student Representative for Computer Science course that had up to 200 students. 
+A consistent blogger with various positive feedbacks (olushares.wordpress.com) </li>
+<li> <h4>IT</h4>
+<ul> <li><h4>Languages</h4>
+Developed Java, PERL and HASKELL programming skills through coursework; 
+also learnt the programming languages like Visual Basic and C++. 
+Learnt web-related languages like HTML, CSS, JavaScript and PHP </li>
+<li><h4>Operating Environment</h4>
+Developed skills in using operating systems based on Windows and Linux. 
+Developed skills in using the UNIX command line interface and also writing scripts like Bash Scripts, sed scripts and awk scripts</li>
+</ul> </li>
+<li> <h4>Scholarship award</h4> Gained two scholarships award; Aberystwyth University Merit Award (based on a written exam) 
+and “Aberystwyth University International Excellence Award” based on my A-Levels result. </li>
+<li><h4>A proven ability to solve complex problems</h4> Gained from the interest I have alongside the classes 
+I have taken in Mathematics and other problem solving modules. </li>
+<li><h4>Career motivation and a willingness to continue to further my knowledge and skills</h4> This is 
+simply because computing is an area I have always been interested in. </li>
+</ul>
+ 
+<h3 class="headings"><a id="education">Education</a></h3>
+<h4>2012 - 2016  ---   Aberystwyth University</h4>
+<h5 class="padded">BSc (Hons) Computer Science </h5>
+<p class="padded">Expected outcome: Would be a competent programmer in Java and C++. <br/>
+Key modules: Program Design, Data Structures And Algorithms, C and Unix Programming, Web Programming </p>
+<h4>2010 - 2012 --- Leeds City College, Technology Campus, Leeds </h4>
+<h5 class="padded">BTEC “Level 3” Extended Diploma in Software Development </h5>
+<p class="padded">18 units: D* D* D* <br/>
+Key modules: Object-Oriented Programming, Web Development, Databases </p> 
+<h4>2002 - 2008 ---	Adeline Ogunlade Memorial, Ogun State, Nigeria </h4>
+<p class="padded">GCSEs: 8 at grade A to C (including Maths and English)</p>
+
+<h3 class="headings"><a id="employment"> Employment</a></h3>
+
+<table>
+<tr>
+<td class="padded"><h4>1/2011 – 1/2013</h4></td>
+<td><h4>St Gemmas Hospice, Leeds</h4>
+<h4>Catering Assistance/ House Keeper</h4></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<ul>
+<li>Had to maintain high standard cleanliness in the hospice and also serve the patients food. </li>
+<li>Developed team working skills as I was always working in a team</li>
+</ul></td>
+</tr>
+
+<tr>
+<td class="padded"><h4>7/2012 – 2/2013</h4></td>
+<td><h4>Heddfan Residential Home, Newtown, Wales</h4>
+<h4>Care Assistant</h4></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<ul>
+<li>Cared for service-users in a residential home.</li>
+<li>Communicate with staff and residents verbally and through report writing.</li>
+<li>Dealt and developed ability to understand people of various mental capacity.</li>
+<li>Contributed by using my computing skills whenever it is required in any way by either the manager who anyone else within the residential 
+home as an effort to improve the general effectiveness of the home.</li>
+</ul></td>
+</tr>
+</table>
+
+<h3 class="headings"><a id="interests">Interests</a></h3>
+<p>I watch and play football weekly as this increases my team working skills. I enjoy singing and playing musical instruments like the drums and guitar.</p>
+
+<h3 class="headings"><a id="referees">Referees</a></h3>
+<p>Amanda Clare, lecturer at the Department of Computer Science, Aberystwyth University, Aberystwyth, Ceredigon, SY23 3DB<br/> 
++44(0)1970 622424; afc@aber.ac.uk<br/><br/>
+Jill Messham, Taskmaster Recruitment Agency, 36 Lower Basinghall Street,Leeds, West-Yorkshire, LS1 5EB <br/>
+0113 244 6367; jmessham@tmrec.com
+</p> 
+
+</div>
+
+<div id="footer">
+<p>
+This page was last modified on:
+<script type="text/javascript">
+<!--
+document.write(document.lastModified);
+-->
+</script>
+
+</p>
+</div>
+
+</div>
+
+</body>
+</html>

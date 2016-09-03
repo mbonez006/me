@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css" media="screen">
+<link rel="stylesheet" href="hannahslide.css" media="screen">
+<link rel="stylesheet" href="hannahprint.css" media="print">
+<link rel="stylesheet" href="prettify/prettify.css" media="screen">
+
+<link rel="shortcut icon" href="../favicon.ico">
+<style>
+div.resize {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	resize: both;
+        background-color: red;
+        color: white;
+	overflow: auto;
+}
+</style>
+<title>Client side graphics programming for the web- Lecture 2</title>
+</head>
+<body onload="prettyPrint();setInterval('clocktick()',1000);">
+<header>
+    <h1>Storyboards, animation, sprites: <span id="clock">&nbsp;</span></h1>
+<script>
+function clocktick() {
+var currentTime=new Date();
+var currentHours=currentTime.getHours();
+var currentMinutes=currentTime.getMinutes();
+var currentSeconds=currentTime.getSeconds();
+  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+var currentTimeString=currentHours+":"+currentMinutes+":"+currentSeconds;
+document.getElementById('clock').firstChild.nodeValue = currentTimeString;
+}
+</script> 
+
+    <nav>
+        <ul>
+            <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
+            <li><span id="slide-number"></span><span id="slide-total"></span></li>
+            <li><button id="next-btn" title="Next Slide">Next Slide</button></li>
+        </ul>
+    </nav>
+</header>
+<div id="deck">
+
+
+<section>
+<img id="carsprites" src="img/sprite-example.gif">
+<hgroup>
+<h1>Sprites</h1>
+</hgroup>
+
+<ul>
+<li>Sprites are graphics</li>
+<li>Typically...
+<ul>
+<li>Small</li>
+<li>Low-res</li>
+<li>Sometimes show different frames of an animation</li>
+<li>Sometimes show backgrounds for a game</li>
+</ul>
+</li>
+</ul>
+ <canvas id="a" width="800" height="36" style="border:1px dotted" onClick="draw_car()"></canvas>
+<script>
+
+var x=0;
+var y=0;
+var f=0;
+var w=32;
+var h=32;
+var a_canvas = document.getElementById("a");
+var a_context = a_canvas.getContext("2d");
+
+var cars=document.getElementById("carsprites");
+function draw_car() {
+	setInterval(draw_car_at,200);
+}
+function draw_car_at() {
+        a_context.fillStyle="#292";
+        a_context.fillRect(0,0,a_canvas.width, a_canvas.height);
+        a_context.fillStyle="#aaa";
+        a_context.fillRect(0,25,a_canvas.width, a_canvas.height-25);
+	if (x>=(a_canvas.width)) {  
+		x=0;
+	}
+	x+=2;
+        f++;
+	// draw the car 
+        if (f==2) {
+          f=4;
+        }
+        if (f==6) {
+          f=0;
+        }
+       
+	a_context.drawImage(cars, w, f*h, w, h, x, y, w, h);
+}
+</script>
+
+
+</section>
+
+</div>
+<!-- /deck -->
+<script src="./jquery-1.4.2.min.js"></script>
+<script src="./htmlSlides.js"></script>
+<script src="./prettify/prettify.js"></script>
+</body>
+</html>
+

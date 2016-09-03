@@ -1,0 +1,113 @@
+//Page Title
+#pageTitle{
+	color: white;
+}
+
+#arrowUp{
+	color: #90EE90;
+}
+
+#arrowDown{
+	color: #FFCC99;
+}
+
+//Page Layout
+html, body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	color: #464637;
+	min-height: 100%;
+	height:100%;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+#songInputRow { 
+	position:absolute; 
+	bottom:0;
+	width: 90%;
+
+	//Add Song Button
+	button{
+		color: #fff;
+		width: 100%;
+		border: none;
+		outline: 0;
+		margin: 10px 0 0;
+		transition: opacity .1s ease;
+		cursor: pointer;
+		background: #5F9EDF none repeat scroll 0% 0%;
+		padding: 10px 0;
+		font-size: 20px;
+	}
+
+	#clearKey{
+		background: red none repeat scroll 0% 0%;
+	}
+}
+
+//ul
+#handle-1{
+	margin: 5px;
+	padding: 0px;
+	list-style: none;
+
+	i{
+		opacity: 1;
+		cursor: pointer;
+		color: #c00;
+		right: 120px;
+		position: absolute;
+		font-style: normal;
+		font-size: 45px;
+		margin-top: -15px;
+	} 
+}
+
+
+.drag-handle {
+	margin-right: 10px;
+	font: bold 25px Sans-Serif;
+	color: #5F9EDF;
+	display: inline-block;
+	cursor: move;
+	cursor: -webkit-grabbing;  /* overrides 'move' */
+}
+
+//ul li
+.block__list li { 
+	cursor: move; 
+}
+
+.block__list_words{
+	li{
+		padding: 10px 15px;
+		font-size: 20px;
+		border: solid 1px grey;
+	}
+
+	li:first-letter{
+		text-transform: uppercase;
+	}
+
+	.sortable-ghost {
+		opacity: 0.4;
+		background-color: #F4E2C9;
+	}
+}
+
+
+//Screen < 700
+@media screen and (max-width: 700px) {
+    #handle-1{
+		i{
+			right: 40px;
+		} 
+	}
+
+	#songInputRow { 
+		width: 100%;
+	}
+}
