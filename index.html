@@ -1,106 +1,457 @@
 <!DOCTYPE html>
- <html>
- <head>
-         <meta charset="utf-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link href="css/bootstrap-responsive.css" rel="stylesheet">
-         <link rel="icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" /> 
-         <link rel="shortcut icon" href="http://users.aber.ac.uk/ola/favicon.ico" type="image/x-icon" />
-         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-         <title>Olu Ashiru</title>
-         <link rel="stylesheet" href="css/bootstrap.min.css">
- 
-     <script language="JavaScript1.2">
+<html lang="en">
 
-        var howOften = 5; //number often in seconds to rotate
-        var current = 0; //start the counter at 0
-        var ns6 = document.getElementById&&!document.all; //detect netscape 6
+<head>
 
-        // place your images, text, etc in the array elements here
-        var items = new Array();
-        var j = 0;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        for(i=0; i < 2; i++){
-            j = i+1;
-            items[i]="<img alt='pic"+j+".jpg' src='img/pic"+j+".jpg' width = '150' height = '180' border='0'/>"; //a linked image
-        }
+    <title>Olu Ashiru</title>
 
-        function rotater() {
-            document.getElementById("placeholder").innerHTML = items[current];
-            current = (current==items.length-1) ? 0 : current + 1;
-            setTimeout("rotater()",howOften*1000);
-        }
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        function rotater() {
-            if(document.layers) {
-                document.placeholderlayer.document.write(items[current]);
-                document.placeholderlayer.document.close();
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Olu Ashiru</h1>
+            <h3>sewen006@gmail.com</h3>
+            <h4>creating web and software solutions that attends to individual and business needs...</h4>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Olu Ashiru</h1> <h2>Software Engineer and Website Developer <br>with interests particularly in Computer Vision & Machine learning...</h2>
+                    <p class="lead">Using web, mobile and desktop technologies to creatively find solutions to individual and business problems. <br>Adhering to good engineering principles and always aiming for delivering quality & maintainable products & services.<br><br> <strong>#softwareEngineer | #webDesigner | #mobileAppDeveloper | #cloudTechnologies</strong></p><br>
+                    <a target="_blank" href="http://www.keighleynews.co.uk/news/14396618.Computer_science_student_from_Keighley_awarded_new_scholarship/" class="btn btn-lg btn-dark">Personal Achievement on Newspaper</a>
+                    <a target="_blank" href="http://olushares.wordpress.com" class="btn btn-lg btn-dark">Read my blog!</a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-laptop fa-stack-1x text-primary"></i>                                
+                            </span>
+                                <h4>
+                                    <strong>Web Development</strong>
+                                </h4>
+                                <p>Building quality and modern website or app that meets your personal or business needs...</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-mobile fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Mobile App Development</strong>
+                                </h4>
+                                <p>Got a cool idea that you fancy building a native Android app for? Contact me!</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cog fa-spin fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Desktop Application</strong>
+                                </h4>
+                                <p>Building desktop application for individuals and small businesses to automate tedious processes.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Cloud Technology</strong>
+                                </h4>
+                                <p>Using cloud technologies to support your needs for storage, backups & big data processing.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Services aimed at individuals, small businesses, and charities that can't afford a fortune for software solutions...</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h1>My Work</h1>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <strong>Website for small business..</strong>
+                                <a target="_blank" href="http://laureatebizassociates.com/">
+                                    <img class="img-portfolio img-responsive" src="img/laureate.png">
+                                </a>
+                                <p>Including social media integrations, banner scrolling, dashboard, e-reader, etc</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <strong>Android App on Google Play store</strong>
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB">
+                                    <img class="img-portfolio img-responsive" src="img/sporting.PNG">
+                                </a>
+                                <p>App that uses weather parameters to predict if a sporting activity should be arranged or not.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <strong>Android App on Google Play store</strong>
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB">
+                                    <img class="img-portfolio img-responsive" src="img/sporting2.PNG">
+                                </a>
+                                <p>App that uses weather parameters to predict if a sporting activity should be arranged or not.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 otherWorks">
+                            <div class="portfolio-item">
+                                <strong>Simple design showcase website</strong>                            
+                                    <img class="img-portfolio img-responsive" src="img/diana2.png">
+                            </div>
+                        </div>                         
+                        <div class="col-md-6 otherWorks">
+                            <div class="portfolio-item">
+                                <strong>Simple design showcase website</strong>
+                                    <img class="img-portfolio img-responsive" src="img/diana1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-12 otherWorks">
+                            <div class="portfolio-item">
+                                <strong>Work in progress...</strong>
+                                    <img class="img-portfolio img-responsive" src="img/wip.jpeg">
+                            </div>
+                        </div>                         
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a id="viewOtherWorks" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Price Quote Estimator For Website Design...</h3>
+                    <br>
+                    <div class="col-lg-4 text-center">                        
+                        <p>Estimated numbers of website pages? <br><input type="number" id="noOfPages" style="color:black;" placeholder="1"><br><br></p>
+                        <p>Custom Design or Template? <br>
+                        <select style="color:black" id="customOrTemplate">
+                          <option value="template">Template</option>
+                          <option value="custom">Custom Design</option>
+                        </select><br><br></p>
+                        <p>RESPONSIVE DESIGN? <br>Fitting your site automatically for mobile devices</p>
+                        <select style="color:black" id="responsiveOrNot">
+                          <option value="responsive">Yes</option>
+                          <option value="noResponsive">No</option>
+                        </select><br><br></p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <p>Ecommerce? <br>Would you be selling anything online?</p>
+                        <select style="color:black" id="ecommerceOrNot">
+                          <option value="noEcommerce">No</option>
+                          <option value="ecommerce">Yes</option>
+                        </select><br><br></p>
+                        <p>Dashboard? <br>Would you like to be able to manage the website yourself?</p>
+                        <select style="color:black" id="dashboardOrNot">
+                          <option value="noDashboard">No</option>
+                          <option value="dashboard">Yes</option>
+                        </select><br><br></p>
+                        <a id="calculateEstimateBtn" class="btn btn-dark">Calculate Estimate</a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                    <br><br>
+                        <h1 id="estimate" style="font-size: 60px"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+ <!--    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div  id="contact" class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Contact me, let's have a chat..</strong>
+                    </h4>
+                    <p>Based in London</p>
+                    <ul class="list-unstyled">
+<!--                         <li><i class="fa fa-phone fa-fw"></i> 07553451500</li> -->
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">sewen006@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a target="_blank" href="http://www.facebook.com/aoluwaseun"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/oluAshiru"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.linkedin.com/pub/olu-ashiru/42/b59/4a9"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Olu Ashiru 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+
+    $("#calculateEstimateBtn").click(function(e){
+        calculateAndDisplayEstimate();
+    });
+
+    $( document ).ready(function() {
+        $(".otherWorks").hide();
+    });
+
+    $("#viewOtherWorks").click(function(e){
+        $(".otherWorks").show();
+        $("#viewOtherWorks").hide();
+    });
+
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
             }
-            if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
-                if(document.all)
-                    placeholderdiv.innerHTML=items[current];
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
 
-            current = (current==items.length-1) ? 0 : current + 1; //increment or reset
-            setTimeout("rotater()",howOften*1000);
+    function calculateAndDisplayEstimate(){
+        var numOfPages = $("#noOfPages").val();
+        var customOrTemplate = $("#customOrTemplate :selected").text();
+        var responsiveOrNot = $("#responsiveOrNot :selected").text();
+        var ecommerceOrNot = $("#ecommerceOrNot :selected").text();
+        var dashboardOrNot = $("#dashboardOrNot :selected").text();
+        var estimatedCost = 500;
+
+        //verify values
+        if (numOfPages < 1){
+            numOfPages = 1;
         }
 
-        window.onload=rotater;
+        estimatedCost = estimatedCost + (numOfPages * 150)
+
+        if(customOrTemplate == "Custom Design"){
+            estimatedCost = estimatedCost + 400;
+        }
+
+        if(responsiveOrNot == "Yes"){
+            estimatedCost = estimatedCost + 300;   
+        }
+
+        if(dashboardOrNot == "Yes"){
+            if(customOrTemplate == "Custom Design"){
+                estimatedCost = estimatedCost + 500;
+            }
+            else{
+                estimatedCost = estimatedCost + 200;
+            }
+        }
+
+        if(ecommerceOrNot == "Yes"){
+            if(customOrTemplate == "Custom Design"){
+                estimatedCost = estimatedCost + 1000;
+            }
+            else{
+                estimatedCost = estimatedCost + 500;
+            }
+        }
+
+        $("#estimate").text("£" + estimatedCost);
+
+    }
     </script>
- </head>
- <body>
-         
- <div class="container-fluid">        
-     <div class="row-fluid">
-                <div class="page-header">
-                 <h2>Olu Ashiru</h2>
-                 <p>ola@aber.ac.uk</p>
-     </div><!-- header -->
 
-             <div class="span9">
-            <ul class="nav nav-tabs ">
-                <li class="active">
-                <a href="index.html">Home</a>
-                </li>
-                <li><a href="sandwichlinks/sandwichMonth1.html">Sandwich year Diary</a></li>
-            </ul>
+</body>
 
-
-                 <h3>Who am I?</h3>
-                 <p>I am a graduate of Aberystwyth University in Wales. <br/>
-I am very enthusiastic about Computing and the different aspects of it including Software Engineering, Web Programming, Mobile App Development, Computer Vision and Machine Learning Algorithms.
-<br/>
-I studied a Level 3 BTEC in Software Development course at Leeds City College - Technology Campus, and decided to proceed with studying a Computing course at Aberystwyth University.<br/><br>
-</p>
-<h4>Links to some of my work</h4>
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB" target = "_blank"> Sporting Weather Android App </a> - An Android App that condenses all weather parameters to a simple Yes or No answer 
-specifically in regards to participation in a particular sporting activity or not (in a certain place and time).</li>
-</ul>                 
-
-<h4>Links to some Achievements</h4>
-<ul>
-<li>Peter Hancock Merit Scholarship <br>
-Featuring on Aberystwyth University news - <a target="_blank" href="https://www.aber.ac.uk/en/news/archive/2016/02/title-180496-en.html">https://www.aber.ac.uk/en/news/archive/2016/02/title-180496-en.html</a><br>And local newspaper (Keighley news) - <a target="_blank" href="http://www.keighleynews.co.uk/news/14396618.Computer_science_student_from_Keighley_awarded_new_scholarship/">http://www.keighleynews.co.uk/news/14396618.Computer_science_student_from_Keighley_awarded_new_scholarship/</a></li>
-</ul>
-                 
-<h3>Outside Education</h3>
-<p> I play & watch football and Tennis. I support Arsenal FC. <br/>
-Outside of sport, I love my music. I play musical instruments including guitars, keyboard and drums.
-</p>                 
-             </div><!-- .span4 -->
-         
-             <div class="span2">
-                 <layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
-                 <h3>Links</h3>
-                 <a class="btn btn-primary btn-medium disabled" href = "http://olushares.wordpress.com" target="_blank">Check My blog</a><br><br>
-                 <a class="btn btn-primary btn-medium disabled" href = "http://www.facebook.com/aoluwaseun" target="_blank">Facebook</a><br><br>
-                 <a class="btn btn-primary btn-medium disabled" href = "http://www.linkedin.com/pub/olu-ashiru/42/b59/4a9" target="_blank">My LinkedIn</a><br><br>
-                 
-                 <a class="btn btn-primary btn-medium disabled" href="game/index.html" target="_blank">My JS Game</a><br>
-
-             </div><!-- .span4 -->
-    </div><!-- .row -->
- </div><!-- .container -->
-     
- </body>
 </html>

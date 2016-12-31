@@ -1,11 +1,1 @@
-#showImage{
-    text-align: center;
-}
-.anchorMenu{
-    position: fixed;
-    top: auto;
-    right: 50px;
-    z-index: 5;
-    overflow: hidden;
-    padding-top: 0px;
-}
+.text-vertical-center h1,.text-vertical-center h2,.text-vertical-center h3,.text-vertical-center h4{color:#fff}/*# sourceMappingURL=style.css.map */
