@@ -196,7 +196,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
-    background: hsla(66, 70%, 54%, 0.11);
+    background: white;
 }
 
 .portfolio-item {
@@ -239,9 +239,9 @@ hr.small {
 
 /* Footer */
 
-footer {
+/*footer {
     padding: 100px 0;
-}
+}*/
 
 #to-top {
   display: none;

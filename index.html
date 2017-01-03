@@ -22,7 +22,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">     
+    <link href="css/lightbox.css" rel="stylesheet">
     <!-- <script src="js/imagerotator.js"></script> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,15 +55,59 @@
                 <a href="#services" onclick=$("#menu-close").click();>Services</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                <a href="#clients" onclick=$("#menu-close").click();>Clients</a>
             </li>
             <li>
-                <a href="#pricing" onclick=$("#menu-close").click();>Pricing</a>
-            </li>            
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
             <li>
                 <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
             </li>
         </ul>
+    </nav>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> Olu</span> Ashiru
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#top" class="page-scroll">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="page-scroll">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="page-scroll">Services</a>
+                    </li>
+                    <li>
+                        <a href="#clients" class="page-scroll">Clients</a>
+                    </li>                    
+                    <li>
+                        <a href="#portfolio" class="page-scroll">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="page-scroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
     <!-- Header -->
@@ -81,21 +126,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1>Olu Ashiru</h1> <h2>Software Engineer and Website Developer <br>with interests particularly in Computer Vision & Machine learning...</h2>
-                    <p class="lead">Using web, mobile and desktop technologies to creatively find solutions to individual and business problems. <br>Adhering to good engineering principles and always aiming for delivering quality & maintainable products & services.<br><br> <strong>#softwareEngineering | #webDesign | #mobileAppDevelopment | #cloudTechnologies</strong></p><br>
+                    <h2>Software Engineer and Website Developer <br></h2>
+                    <p class="lead">I aim to creatively find solutions to individual and business problems using web, mobile and/or desktop applications.<br><br> <strong>#softwareEngineering | #webDesign | #mobileAppDevelopment | #cloudTechnologies</strong></p><br>
 
                     <div id="placeholderdiv" class="col-lg-4 text-center">
                         <img class="img-portfolio img-responsive" src="img/me1.jpg" />
                     </div>
                     <div class="col-lg-4 text-center">
-                        <p><strong style="color:blue;">Current status</strong> <br>Working full-time for the BBC - Media Services department, while freelancing in my spare-time & working on some long-standing personal projects!</p>
+                        <h5 style="color:blue;">Current status</h5> <p>Working full-time with the BBC, while freelancing in my spare-time & working on some personal projects!</p>
 
-                        <p><strong style="color:green;">Current location</strong> <br>London!</p>
+                        <h5 style="color:green;">Current location</h5> <p>London!</p>
 
-                        <p><strong style="color:orange;">Been coding since</strong> <br>September 2010!</p>
-
-                        <a target="_blank" href="http://olushares.wordpress.com" class="btn btn-lg btn-dark">Read my blog!</a>
-                        <a target="_blank" href="http://www.keighleynews.co.uk/news/14396618.Computer_science_student_from_Keighley_awarded_new_scholarship/" class="btn btn-lg btn-dark">Personal Achievement</a>
+                        <h5 style="color:orange;">Been coding since</h5> <p>September 2010!</p>
+                        <a href="#services" class="btn btn-dark btn-lg">See My Freelance Services</a>
 
                     </div>
                     <div class="col-lg-4 text-center">
@@ -114,7 +157,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Freelance Services I Can Offer</h2>
+                    <h2>Freelance Services</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -127,7 +170,6 @@
                                     <strong>Web Development</strong>
                                 </h4>
                                 <p>Building quality and modern website or app that meets your personal or business needs...</p>
-                                <a href="#contact" class="btn btn-light">Contact me to learn more</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -139,8 +181,7 @@
                                 <h4>
                                     <strong>Mobile App Development</strong>
                                 </h4>
-                                <p>Got a cool idea that you fancy building a native Android app for? Contact me!</p>
-                                <a href="#contact" class="btn btn-light">Contact me to learn more</a>
+                                <p>Got a cool idea that you fancy building a native mobile app for? Contact me!</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -153,7 +194,6 @@
                                     <strong>Desktop Application</strong>
                                 </h4>
                                 <p>Building desktop application for individuals and small businesses to automate tedious processes.</p>
-                                <a href="#contact" class="btn btn-light">Contact me to learn more</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -166,9 +206,10 @@
                                     <strong>Cloud Technology</strong>
                                 </h4>
                                 <p>Using cloud technologies to support your needs for storage, backups & big data processing.</p>
-                                <a href="#contact" class="btn btn-light">Contact me to learn more</a>
-                            </div>
+<!--                                 <a href="#contact" class="btn btn-light">Contact me to learn more</a> -->
+                            </div>                            
                         </div>
+                        <a href="#clients" class="btn btn-dark btn-lg">My Target Clients</a>                    
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -180,9 +221,10 @@
     </section>
 
     <!-- Callout -->
-    <aside class="callout">
+    <aside id="clients" class="callout">
         <div class="text-vertical-center">
-            <h1>Services aimed at individuals, small businesses, and charities that can't afford a fortune for software solutions...</h1>
+            <h1>Services aimed at individuals, small businesses, and charities that can't afford a fortune for software solutions...</h1><br>
+            <a href="#portfolio" class="btn btn-dark btn-lg">View My Portfolio</a>
         </div>
     </aside>
 
@@ -191,48 +233,47 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h1>Some of My Work</h1>
+                    <h1>Portfolio</h1>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <strong>Website for small business..</strong>
-                                <a target="_blank" href="http://laureatebizassociates.com/">
-                                    <img class="img-portfolio img-responsive" src="img/laureate.png">
-                                </a>
-                                <p>Including social media integrations, banner scrolling, dashboard, e-reader, etc</p>
-                            </div>
+                        <div class='col-md-4'>
+                            <a class='thumbnail' href='img/laureate.png' data-lightbox='portfolio' data-title="Small business website. Functionalities include social media integrations, banner scrolling, dashboard and e-reader. See www.laureatebizassociates.com">
+                                <img class='img-responsive' src='img/laureate.png' alt='laurette' style="width: 180px;">
+                            </a>
+                            <p>Funtionalities include social media integrations, banner scrolling, dashboard and e-reader</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <strong>Android App on Google Play store</strong>
-                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB">
-                                    <img class="img-portfolio img-responsive" src="img/sporting.PNG">
-                                </a>
-                                <p>App uses weather info to predict if an outdoor sporting activity should be scheduled or not.</p>
-                            </div>
+                        <div class='col-md-4'>
+                            <a class='thumbnail' href='img/church.png' data-lightbox='portfolio' data-title='Church website. Including Google Calendar, audio podcast, blog, dashboard and e-reader integration. See www.elimaberystwyth.com/'>
+                                <img class='img-responsive' src='img/church.png' alt='church' style="width: 180px;">
+                            </a>
+                            <p>Including Google Calendar, audio podcast, blog, dashboard and e-reader integration</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <strong>Android App on Google Play store</strong>
-                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB">
-                                    <img class="img-portfolio img-responsive" src="img/sporting2.PNG">
-                                </a>
-                                <p>App uses weather info to predict if an outdoor sporting activity should be scheduled or not.</p>
-                            </div>
+                        <div class='col-md-4'>
+                            <a class='thumbnail' href='img/sporting.PNG' data-lightbox='portfolio' data-title="Sporting Weather Android App - App uses weather info to predict if an outdoor sporting activity should be scheduled or not. See <a target='_blank' href='https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB'>here</a>">
+                                <img class='img-responsive' src='img/sporting.PNG' alt='SportingWeather'>
+                            </a>
+                            <p>App uses weather info to predict if an outdoor sporting activity should be scheduled or not.</p>
                         </div>
-                        <div class="col-md-6 otherWorks">
-                            <div class="portfolio-item">
-                                <strong>Simple exhibit website</strong>                            
-                                    <img class="img-portfolio img-responsive" src="img/diana2.png">
-                            </div>
-                        </div>                         
-                        <div class="col-md-6 otherWorks">
-                            <div class="portfolio-item">
-                                <strong>Simple exhibit website</strong>
-                                    <img class="img-portfolio img-responsive" src="img/diana1.PNG">
-                            </div>
+                        <div class='col-md-4'>
+                            <a class='thumbnail' href='img/sporting2.PNG' data-lightbox='portfolio' data-title="Sporting Weather Android App - App uses weather info to predict if an outdoor sporting activity should be scheduled or not. See <a target='_blank' href='https://play.google.com/store/apps/details?id=com.sportingweather&hl=en_GB'>here</a>">
+                                <img class='img-responsive' src='img/sporting2.PNG' alt='SportingWeather'>
+                            </a>
+                            <p>App uses weather info to predict if an outdoor sporting activity should be scheduled or not.</p>
                         </div>
+                        
+                        <div class='col-md-4'>
+                            <a class='thumbnail' href='img/diana2.png' data-lightbox='portfolio' data-title='Simple Exhibit Website'>
+                                <img class='img-responsive' src='img/diana2.png' alt='Exhibit' style="width: 220px;">
+                            </a>
+                            <p>Simple floristry, illustration and jewellery exhibit website</p>
+                        </div>
+                        <div class='col-md-4'>
+                            <a class='thumbnail' href='img/diana1.PNG' data-lightbox='portfolio' data-title='Simple Exhibit Website'>
+                                <img class='img-responsive' src='img/diana1.PNG' alt='Exhibit' style="width: 220px;">
+                            </a>
+                            <p>Simple floristry, illustration and jewellery exhibit website</p>
+                        </div>
+
    <!--                      <div class="col-md-12 otherWorks">
                             <div class="portfolio-item">
                                 <strong>Work in progress...</strong>
@@ -241,7 +282,6 @@
                         </div>    -->                      
                     </div>
                     <!-- /.row (nested) -->
-                    <a id="viewOtherWorks" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -251,7 +291,7 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+<!--     <aside class="call-to-action bg-primary">
         <div id="pricing" class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -291,7 +331,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
 
     <!-- Map -->
  <!--    <section id="contact" class="map">
@@ -308,8 +348,8 @@
         <div class="container">
             <div class="row">
                 <div id="contact" class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Contact me, let's have a chat..</strong>
-                    </h4>
+                    <h2>Contact me, let's have a chat..
+                    </h2>
                     <p>Based in London</p>
                     <ul class="list-unstyled">
 <!--                         <li><i class="fa fa-phone fa-fw"></i> 07553451500</li> -->
@@ -328,6 +368,9 @@
                             <a target="_blank" href="http://www.linkedin.com/pub/olu-ashiru/42/b59/4a9"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
+                        <a target="_blank" href="http://olushares.wordpress.com" class="btn btn-lg btn-dark"><i class="fa fa-wordpress" aria-hidden="true"></i> Read my blog!</a>
+                        <a target="_blank" href="http://www.keighleynews.co.uk/news/14396618.Computer_science_student_from_Keighley_awarded_new_scholarship/" class="btn btn-lg btn-dark">See My Personal Achievement</a>
+
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; Olu Ashiru 2017</p>
                 </div>
@@ -339,12 +382,58 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
+    <script src="js/lightbox.min.js"></script>
     <script>
 
+    //nav bar management
+    function collapseNavbar() {
+        $(".navbar").offset().top>50?$(".navbar-fixed-top").addClass("top-nav-collapse"): $(".navbar-fixed-top").removeClass("top-nav-collapse")
+    }
+    $(window).scroll(collapseNavbar),
+    $(document).ready(collapseNavbar),
+    $(function() {
+        $("a.page-scroll").bind("click", function(e) {
+            var t=$(this);
+            $("html, body").stop().animate( {
+                scrollTop: $(t.attr("href")).offset().top
+            }
+            , 1500, "easeInOutExpo"), e.preventDefault()
+        }
+        )
+    }),
+    $(".navbar-collapse ul li a").click(function() {
+        $(this).closest(".collapse").collapse("toggle")
+    });
+
+    // media query event handler
+    if (matchMedia) {
+      var mq = window.matchMedia("(min-width: 768px)");
+      mq.addListener(WidthChange);
+      WidthChange(mq);
+    }
+
+    // media query change
+    function WidthChange(mq) {
+      if (mq.matches) {
+        $("#menu-toggle").hide();
+        $("#sidebar-wrapper").hide();
+        $("#main-nav").show();
+      } else {
+        $("#menu-toggle").show();
+        $("#sidebar-wrapper").show();
+        $("#main-nav").hide();
+      }
+
+    }
+
+
+    // Price Quote bit
     $("#calculateEstimateBtn").click(function(e){
         calculateAndDisplayEstimate();
     });
