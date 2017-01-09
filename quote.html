@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Olu Ashiru</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!-- <script src="js/imagerotator.js"></script> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top" onclick=$("#menu-close").click();>Olu Ashiru</a>
+        </li>
+        <li>
+            <a href="#top" onclick=$("#menu-close").click();>Home</a>
+        </li>
+        <li>
+            <a href="#pricing" onclick=$("#menu-close").click();>Pricing</a>
+        </li>
+        <li>
+            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Navigation -->
+<nav id="main-nav" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#top">
+                <i class="fa fa-play-circle"></i> Olu</span> Ashiru
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a href="#top" class="page-scroll">Home</a>
+                </li>
+                <li>
+                    <a href="#pricing" class="page-scroll">Pricing</a>
+                </li>
+                <li>
+                    <a href="#contact" class="page-scroll">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Header -->
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1>Olu Ashiru</h1>
+        <h3>oluashiru 'AT' outlook.com</h3>
+        <br>
+        <h4>creating web and software solutions that attend to individual and business needs...</h4>
+        <br>
+        <a href="#pricing" class="btn btn-dark btn-lg">Use The Price Quote</a>
+    </div>
+</header>
+
+<!-- Call to Action -->
+
+ <section class="call-to-action bg-primary about">
+    <div id="pricing" class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Price Quote Estimator For Website Design...</h2>
+                <h4>Contact me for other pricings..</h4>
+                <br>
+                <div class="col-lg-4 text-center">
+                    <p>Estimated numbers of website pages? <br><input type="number" id="noOfPages" style="color:black; width: 40px;" placeholder="1"><br><br></p>
+                    <p>Custom Design or Template? <br>
+                    <select style="color:black" id="customOrTemplate">
+                      <option value="template">Template</option>
+                      <option value="custom">Custom Design</option>
+                    </select><br><br></p>
+                    <p>Responsive design? <br>Fitting your site automatically for mobile devices</p>
+                    <select style="color:black" id="responsiveOrNot">
+                      <option value="responsive">Yes</option>
+                      <option value="noResponsive">No</option>
+                    </select><br><br></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <p>Ecommerce? <br>Would you be selling anything online?</p>
+                    <select style="color:black" id="ecommerceOrNot">
+                      <option value="noEcommerce">No</option>
+                      <option value="ecommerce">Yes</option>
+                    </select><br><br></p>
+                    <p>Dashboard? <br>Would you like to be able to manage the website yourself?</p>
+                    <select style="color:black" id="dashboardOrNot">
+                      <option value="noDashboard">No</option>
+                      <option value="dashboard">Yes</option>
+                    </select><br><br></p>
+                    <a id="calculateEstimateBtn" class="btn btn-dark">Calculate Estimate</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                <br><br>
+                    <h1 id="estimate" style="font-size: 60px"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div id="contact" class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Contact me, let's have a chat..
+                </h2>
+                <h4> That's essentially free consultation.</h4>
+                <ul class="list-unstyled">
+                    <!--                         <li><i class="fa fa-phone fa-fw"></i> 07553451500</li> -->
+                    <li><i class="fa fa-envelope-o fa-fw"></i> oluashiru 'AT' outlook.com
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        <a target="_blank" href="http://www.facebook.com/aoluwaseun"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/oluAshiru"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.linkedin.com/pub/olu-ashiru/42/b59/4a9"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                    </li>
+                </ul>
+                <hr>
+                <a target="_blank" href="http://olushares.wordpress.com" class="btn btn-lg btn-dark"><i class="fa fa-wordpress" aria-hidden="true"></i> Read My Blog!</a>
+                <a target="_blank" href="http://www.keighleynews.co.uk/news/14396618.Computer_science_student_from_Keighley_awarded_new_scholarship/" class="btn btn-lg btn-dark">See My Personal Achievement</a>
+
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; Olu Ashiru 2017</p>
+            </div>
+        </div>
+    </div>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/lightbox.min.js"></script>
+<script src="js/me.min.js"></script>
+
+</body>
+
+</html>
