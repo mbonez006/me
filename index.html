@@ -139,9 +139,9 @@
                     <div class="col-lg-4 text-center">
                         <h5 style="color:blue;">My current status</h5> <p>Working full-time for the BBC, while freelancing in my spare-time & working on some personal projects!</p>
 
-                        <h5 style="color:green;">My current location - London</h5>
+                        <h5 style="color:green;">My current location - Manchester</h5>
 
-                        <h5 style="color:orange;">Been coding since - September 2010</h5>
+                        <h5 id="codingYears" style="color:orange;">Been coding for </h5>
                         <a href="#services" class="btn btn-dark btn-lg">Freelancing Works</a>
                     </div>
                 </div>
@@ -381,6 +381,14 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/lightbox.min.js"></script>
     <script src="js/me.min.js"></script>
+    <script>
+        function getYearsOfCoding() {
+            var date = new Date();
+            var years = date.getFullYear() - 2010 + " years";
+            $("#codingYears").append(years);
+        }
+        getYearsOfCoding();
+    </script>
    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
