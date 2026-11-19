@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to request deletion of a Wedspace account and what happens to associated wedding data.">
+  <meta name="theme-color" content="#f6f4ee">
+  <link rel="canonical" href="https://oluashiru.co.uk/wedspace-delete-account/">
+  <title>Delete Your Wedspace Account | OLUASHIRU LTD</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #23352d;
+      --muted: #637169;
+      --forest: #315b47;
+      --forest-dark: #244334;
+      --paper: #f6f4ee;
+      --surface: #fffefa;
+      --line: #e2e4dc;
+      --gold: #a67c3e;
+      --rose: #a85555;
+      --rose-pale: #fbefec;
+      --sage: #e8eee8;
+      --shadow: 0 20px 60px rgba(37, 51, 43, .08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--forest); text-underline-offset: .18em; }
+    a:hover { color: var(--forest-dark); }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 3px; }
+    .site-header { border-bottom: 1px solid rgba(49, 91, 71, .12); background: rgba(255, 254, 250, .86); }
+    .header-inner, .page-shell, .site-footer-inner { width: min(960px, calc(100% - 40px)); margin-inline: auto; }
+    .header-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--forest-dark); font-size: 18px; font-weight: 750; letter-spacing: -.04em; text-decoration: none; }
+    .brand-mark { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 10px 10px 10px 3px; background: var(--forest); color: white; font-family: Georgia, serif; font-size: 17px; font-style: italic; }
+    .back-link { font-size: 14px; font-weight: 650; text-decoration: none; }
+    .page-shell { padding-block: 54px 76px; }
+    .hero { max-width: 750px; margin: 0 auto 30px; text-align: center; }
+    .eyebrow { margin: 0 0 12px; color: var(--rose); font-size: 11px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+    h1, h2, h3 { color: var(--forest-dark); font-family: Georgia, "Times New Roman", serif; }
+    h1 { margin: 0; font-size: clamp(36px, 6vw, 56px); font-weight: 500; letter-spacing: -.045em; line-height: 1.1; }
+    .hero-copy { max-width: 660px; margin: 18px auto 0; color: var(--muted); font-size: 18px; line-height: 1.6; }
+    .updated { display: inline-flex; align-items: center; gap: 8px; margin-top: 19px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 254, 250, .7); color: var(--muted); font-size: 13px; }
+    .updated::before { width: 7px; height: 7px; border-radius: 50%; background: #6e9478; content: ""; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 260px; align-items: start; gap: 22px; }
+    .card, .side-card { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+    .card { min-width: 0; padding: clamp(23px, 5vw, 42px); }
+    .side-card { position: sticky; top: 22px; padding: 21px; }
+    .card section + section { margin-top: 31px; padding-top: 27px; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 12px; font-size: 25px; font-weight: 500; letter-spacing: -.025em; line-height: 1.25; }
+    h3 { margin: 20px 0 7px; font-family: inherit; font-size: 16px; font-weight: 750; }
+    p { margin: 0 0 13px; }
+    p:last-child { margin-bottom: 0; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    li { margin: 7px 0; padding-left: 3px; }
+    .side-card h2 { margin-bottom: 9px; font-family: inherit; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .side-card p { color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .action-card { margin: 20px 0; padding: 20px; border: 1px solid #ead8d3; border-radius: 14px; background: var(--rose-pale); }
+    .action-card h2 { color: #793e3e; }
+    .email-button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; padding: 10px 17px; border-radius: 9px; background: var(--forest); color: #fff; font-weight: 750; text-decoration: none; }
+    .email-button:hover { background: var(--forest-dark); color: #fff; }
+    .note { margin-top: 14px; padding: 14px 16px; border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; background: #f7f4eb; color: #48564d; font-size: 14px; }
+    .warning { margin-top: 14px; padding: 14px 16px; border-left: 3px solid var(--rose); border-radius: 0 10px 10px 0; background: var(--rose-pale); color: #694747; font-size: 14px; }
+    .site-footer { border-top: 1px solid rgba(49, 91, 71, .12); background: #eeece4; }
+    .site-footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-block: 22px; color: var(--muted); font-size: 13px; }
+    .footer-brand { color: var(--forest-dark); font-weight: 750; }
+    @media (max-width: 760px) {
+      .header-inner, .page-shell, .site-footer-inner { width: min(100% - 30px, 620px); }
+      .header-inner { min-height: 64px; }
+      .page-shell { padding-block: 36px 52px; }
+      .hero { margin-bottom: 22px; text-align: left; }
+      .hero-copy { margin-inline: 0; font-size: 16px; }
+      .layout { grid-template-columns: 1fr; gap: 14px; }
+      .side-card { position: static; order: -1; }
+      .card { padding: 24px 20px; border-radius: 15px; }
+      .card section + section { margin-top: 25px; padding-top: 23px; }
+      .site-footer-inner { align-items: flex-start; flex-direction: column; gap: 6px; }
+    }
+    @media (max-width: 420px) { .back-link { font-size: 12px; } .brand { font-size: 16px; } h2 { font-size: 22px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../" aria-label="Wedspace account deletion information"><span class="brand-mark" aria-hidden="true">w</span><span>wedspace</span></a>
+      <a class="back-link" href="../">Back to Olu Ashiru <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="hero">
+      <p class="eyebrow">Your account, your choice</p>
+      <h1>Delete your Wedspace account</h1>
+      <p class="hero-copy">You can request deletion in the app or by email. Read what happens to your account, wedding workspaces, and purchase records before you choose.</p>
+      <p class="updated"><time datetime="2026-11-19">Updated 19 November 2026</time></p>
+    </div>
+
+    <div class="layout">
+      <article class="card">
+        <section id="in-app">
+          <h2>Request deletion in the app</h2>
+          <ol>
+            <li>Sign in to the Wedspace account you want to delete.</li>
+            <li>Open the <strong>More</strong> tab and select <strong>Delete my account</strong>.</li>
+            <li>Choose what should happen to each wedding workspace you own: transfer it to another existing member, or delete the owned wedding data for everyone.</li>
+            <li>Confirm the deletion. If you choose to delete your owned wedding data, type <strong>DELETE</strong> when prompted.</li>
+          </ol>
+          <div class="warning">Deleting an owned wedding removes it for all members. It cannot be restored. Before confirming, download or save anything you want to keep.</div>
+        </section>
+
+        <section id="email-request">
+          <h2>Request deletion without signing in</h2>
+          <p>Email <a href="mailto:oluashiru@outlook.com?subject=Wedspace%20account%20deletion%20request">oluashiru@outlook.com</a> from the email address registered to your Wedspace account. Use the subject <strong>Wedspace account deletion request</strong>.</p>
+          <p>In your message, include the Wedspace account email and choose one of these options:</p>
+          <ul>
+            <li><strong>Keep my wedding plans:</strong> name an email address or international phone number for an existing member who should receive ownership of every wedding workspace you own. The recipient must already belong to each workspace.</li>
+            <li><strong>Delete my owned wedding data:</strong> ask us to permanently delete every wedding workspace you own for all members.</li>
+            <li><strong>I do not own a wedding workspace:</strong> ask us to delete the account and remove your access from shared workspaces.</li>
+          </ul>
+          <p>We will verify that the request is yours before deleting the account. Do not send your password, sign-in code, payment-card details, or store receipt. If you cannot use the registered email address, contact us and we will explain what information is needed to verify your identity.</p>
+          <p>After identity is verified, we will complete the request within <strong>30 days</strong>. We will contact you if information is missing or we need clarification about transferring or deleting an owned workspace.</p>
+          <a class="email-button" href="mailto:oluashiru@outlook.com?subject=Wedspace%20account%20deletion%20request">Email a deletion request <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section id="what-is-deleted">
+          <h2>What is deleted</h2>
+          <p>When the account deletion request is completed, Wedspace deletes the sign-in account and removes the account’s push-notification tokens and access to wedding workspaces and chats.</p>
+          <h3>If you transfer an owned wedding</h3>
+          <p>Your account and membership are removed, and ownership is transferred to the existing member you identified. The workspace is <strong>not deleted</strong>: its plans, guest details, RSVPs, invitations and uploaded design images, photos, chats and chat media remain available to the new owner and other authorised members. Messages you sent may remain visible to them until the chat retention cutoff described below.</p>
+          <h3>If you delete an owned wedding</h3>
+          <p>The wedding workspace is deleted for everyone. This removes its planning records, guest list and contact details, RSVP and dietary notes, invitations and uploaded invitation-design images, membership and access records, guest-photo records and files, and chat records and media.</p>
+          <h3>If you are only a member of someone else’s wedding</h3>
+          <p>Your membership and chat access are removed. The owner’s workspace and information you contributed to it remain for the owner and other authorised members. Chat messages may remain available until the wedding’s chat retention cutoff; deleting your account does not delete another person’s workspace.</p>
+        </section>
+
+        <section id="retained">
+          <h2>Information that may remain</h2>
+          <ul>
+            <li><strong>Purchase verification references:</strong> a limited record identifying the store, purchase/transaction reference, product, associated wedding and purchase timing is retained after account or workspace deletion with <strong>no fixed automatic expiry</strong>. It does not contain payment-card details. It is kept for purchase verification and to handle store refund or revocation events.</li>
+            <li><strong>Transferred or shared wedding information:</strong> information in a workspace that is transferred or owned by someone else remains until that workspace’s owner deletes it. This can include content you added and messages you sent.</li>
+            <li><strong>Chat data in a workspace that is not deleted:</strong> chat content becomes unavailable three calendar months after the wedding date captured when the first chat group was created. The service stops providing it at that cutoff; deletion of stored chat records and media then happens asynchronously, so physical removal may take longer.</li>
+            <li><strong>Guest photos in a workspace that is not deleted:</strong> photos remain until their normal expiry, 97 days after the wedding. Uploads are accepted from 90 days before the wedding through 7 days after. Expired photos stop being served at the cutoff, and cloud object deletion may happen asynchronously.</li>
+            <li><strong>Copies outside Wedspace:</strong> information another member downloaded, exported, copied, or sent through another app is outside our control. Apple and Google may also retain purchase records under their own terms and retention practices.</li>
+          </ul>
+          <div class="note">The 3-month chat and 97-day photo periods apply only where the wedding workspace is kept. If you choose to delete an owned wedding, its associated chat, photo, and invitation-design files are removed as part of that workspace deletion.</div>
+        </section>
+
+        <section id="contact">
+          <h2>Questions or privacy requests</h2>
+          <p>For help with a deletion request or to make another privacy request, contact <strong>OLUASHIRU LTD</strong> at <a href="mailto:oluashiru@outlook.com">oluashiru@outlook.com</a>. See the <a href="/wedspace-privacy-policy/">Wedspace Privacy Policy</a> for more information about personal information and your privacy rights.</p>
+        </section>
+      </article>
+
+      <aside class="side-card" aria-label="Deletion request summary">
+        <h2>Quick summary</h2>
+        <p>In the app: <strong>More → Delete my account</strong>.</p>
+        <p>Without the app: email <a href="mailto:oluashiru@outlook.com?subject=Wedspace%20account%20deletion%20request">oluashiru@outlook.com</a> from your registered account email.</p>
+        <p>We complete verified email requests within 30 days. If you own a workspace, choose transfer or deletion before the account can be removed.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span class="footer-brand">wedspace</span>
+      <span>Account deletion information for Wedspace users.</span>
+      <a href="/wedspace-privacy-policy/">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
