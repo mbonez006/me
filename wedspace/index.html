@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan your wedding with Wedspace: a calm shared space for checklists, budgets, guests, invitations and the details that make your day yours.">
+  <meta name="theme-color" content="#f6f5f0">
+  <link rel="canonical" href="https://oluashiru.co.uk/wedspace/">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <title>Wedspace — Plan your wedding. Keep the joy.</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #28493e;
+      --forest: #426b5b;
+      --forest-deep: #294b40;
+      --sage: #e9eee8;
+      --sage-dark: #789183;
+      --gold: #b58d4a;
+      --paper: #f6f5f0;
+      --surface: #fffefa;
+      --muted: #68776e;
+      --line: #e2e5dd;
+      --shadow: 0 24px 70px rgba(37, 56, 46, .1);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body {
+      min-width: 320px;
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; border-radius: 4px; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img, svg { display: block; max-width: 100%; }
+    .skip-link { position: absolute; z-index: 20; top: 10px; left: 10px; transform: translateY(-150%); padding: 10px 14px; border-radius: 8px; background: var(--forest-deep); color: white; }
+    .skip-link:focus { transform: translateY(0); }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .site-header { position: relative; z-index: 2; }
+    .header-inner { display: flex; min-height: 88px; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--forest); font-size: 19px; font-weight: 800; letter-spacing: .19em; text-decoration: none; }
+    .brand-mark { width: 37px; height: 37px; }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 3vw, 38px); }
+    .nav-links a { color: #54685d; font-size: 14px; font-weight: 650; text-decoration: none; }
+    .nav-links a:hover { color: var(--forest-deep); }
+    .nav-links .nav-cta { padding: 11px 18px; border-radius: 999px; background: var(--forest-deep); color: #fff; }
+
+    .hero { position: relative; overflow: hidden; padding: 42px 0 92px; }
+    .hero::before, .hero::after { position: absolute; z-index: 0; border-radius: 50%; content: ""; pointer-events: none; }
+    .hero::before { top: -260px; right: -230px; width: 790px; height: 790px; background: #e9eee8; opacity: .82; }
+    .hero::after { right: -60px; bottom: -440px; width: 620px; height: 620px; background: #eee5d2; opacity: .62; }
+    .hero-grid { position: relative; z-index: 1; display: grid; min-height: 570px; grid-template-columns: minmax(0, 1fr) minmax(340px, .82fr); align-items: center; gap: clamp(26px, 6vw, 90px); }
+    .hero-copy { max-width: 620px; padding-block: 20px; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 21px; color: var(--forest); font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    .eyebrow::before { width: 31px; height: 2px; background: var(--gold); content: ""; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { color: var(--forest-deep); font-family: var(--serif); font-weight: 500; }
+    h1 { max-width: 700px; margin-bottom: 22px; font-size: clamp(54px, 7.3vw, 92px); letter-spacing: -.065em; line-height: .98; }
+    h1 em { color: var(--forest); font-weight: 400; }
+    .hero-lede { max-width: 510px; margin-bottom: 28px; color: #65746b; font-size: clamp(18px, 2vw, 21px); line-height: 1.55; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 10px; padding: 13px 20px; border: 1px solid transparent; border-radius: 999px; font-size: 14px; font-weight: 750; text-decoration: none; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--forest-deep); color: #fff; box-shadow: 0 10px 22px rgba(41, 75, 64, .18); }
+    .button-primary:hover { background: #1e3d33; color: #fff; box-shadow: 0 13px 27px rgba(41, 75, 64, .24); }
+    .button-secondary { border-color: #d9dfd7; background: rgba(255, 254, 250, .7); color: var(--forest-deep); }
+    .button-secondary:hover { background: var(--surface); }
+    .hero-note { display: flex; align-items: center; gap: 9px; margin: 23px 0 0; color: #77837a; font-size: 13px; }
+    .hero-note svg { flex: 0 0 auto; color: var(--gold); }
+
+    .phone-stage { position: relative; display: grid; min-height: 535px; place-items: center; }
+    .phone-stage::before { position: absolute; top: 8%; right: 3%; width: 85%; height: 78%; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,.9), rgba(255,255,255,0) 68%); content: ""; }
+    .phone { position: relative; z-index: 1; width: min(305px, 76%); padding: 10px; border: 7px solid #fff; border-radius: 43px; background: #fbfaf7; box-shadow: 0 30px 75px rgba(37, 56, 46, .18); transform: rotate(2deg); }
+    .phone-screen { min-height: 490px; overflow: hidden; padding: 22px 18px 18px; border-radius: 31px; background: linear-gradient(150deg, #fffefa 0%, #f4f2eb 100%); }
+    .phone-top { display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; }
+    .phone-speaker { width: 70px; height: 5px; border-radius: 99px; background: #d9dbd3; }
+    .phone-camera { width: 7px; height: 7px; margin-left: 8px; border-radius: 50%; background: #d9dbd3; }
+    .screen-kicker { margin: 0 0 4px; color: var(--forest); font-size: 9px; font-weight: 800; letter-spacing: .17em; }
+    .screen-title { margin: 0; font-family: var(--serif); font-size: 27px; letter-spacing: -.04em; line-height: 1.1; }
+    .screen-subtitle { margin: 5px 0 18px; color: #818b83; font-size: 11px; }
+    .countdown-card { display: flex; align-items: center; gap: 13px; margin-bottom: 20px; padding: 15px 13px; border-radius: 20px; background: #e9eee8; }
+    .clock-face { display: grid; width: 49px; height: 49px; flex: 0 0 auto; place-items: center; border: 2px solid #d2e0d5; border-radius: 50%; color: var(--forest); }
+    .countdown-label { margin: 0; color: #789183; font-size: 8px; font-weight: 800; letter-spacing: .14em; }
+    .countdown-number { margin: -2px 0 0; font-family: var(--serif); font-size: 25px; line-height: 1.25; }
+    .countdown-caption { margin: 0; color: #7c8980; font-size: 10px; }
+    .list-heading { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; font-size: 12px; font-weight: 800; }
+    .list-heading span:last-child { color: #a68a53; font-size: 10px; }
+    .progress-track { height: 6px; overflow: hidden; margin-bottom: 12px; border-radius: 99px; background: #e2e4dc; }
+    .progress-value { width: 62%; height: 100%; border-radius: inherit; background: #789183; }
+    .phone-task { display: flex; align-items: center; gap: 9px; padding: 11px 2px; border-bottom: 1px solid #e8e7e0; color: #627169; font-size: 11px; }
+    .task-check { display: grid; width: 19px; height: 19px; flex: 0 0 auto; place-items: center; border-radius: 50%; background: var(--forest); color: white; }
+    .task-check.pending { border: 2px solid var(--gold); background: transparent; }
+    .phone-tabs { display: flex; justify-content: space-around; margin-top: 18px; color: #829187; }
+    .phone-tabs span { width: 6px; height: 6px; border-radius: 50%; background: #91a296; }
+    .phone-tabs span:nth-child(2) { width: 8px; height: 8px; margin-top: -1px; background: var(--gold); }
+    .float-note { position: absolute; z-index: 2; display: flex; align-items: center; gap: 9px; padding: 12px 15px; border: 1px solid rgba(226,229,221,.9); border-radius: 16px; background: rgba(255,254,250,.94); box-shadow: 0 16px 40px rgba(37,56,46,.11); color: var(--forest-deep); font-size: 12px; font-weight: 700; }
+    .float-note svg { color: var(--gold); }
+    .float-note-one { top: 20%; right: -2%; }
+    .float-note-two { bottom: 18%; left: -5%; }
+
+    .section { padding-block: 92px; }
+    .section-heading { max-width: 710px; margin: 0 auto 42px; text-align: center; }
+    .section-heading .eyebrow { justify-content: center; }
+    h2 { margin-bottom: 15px; font-size: clamp(38px, 5vw, 58px); letter-spacing: -.05em; line-height: 1.08; }
+    .section-heading > p:last-child { max-width: 610px; margin: 0 auto; color: var(--muted); font-size: 17px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .feature-card { min-width: 0; padding: 27px 26px 30px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: 0 12px 38px rgba(37,56,46,.045); }
+    .feature-icon { display: grid; width: 48px; height: 48px; margin-bottom: 22px; place-items: center; border-radius: 15px; background: var(--sage); color: var(--forest); }
+    .feature-card:nth-child(2) .feature-icon { background: #f4ece0; color: #987845; }
+    .feature-card:nth-child(3) .feature-icon { background: #f2e7e4; color: #a4665c; }
+    .feature-card h3 { margin-bottom: 9px; font-size: 27px; letter-spacing: -.03em; }
+    .feature-card p { margin-bottom: 14px; color: var(--muted); font-size: 14px; }
+    .feature-card ul { display: grid; gap: 7px; margin: 0; padding: 0; color: #506359; font-size: 13px; list-style: none; }
+    .feature-card li { display: flex; gap: 8px; }
+    .feature-card li::before { flex: 0 0 auto; color: var(--gold); content: "✦"; }
+
+    .together-section { position: relative; overflow: hidden; padding-block: 88px; background: var(--forest-deep); color: #f7f5ef; }
+    .together-section::after { position: absolute; right: -100px; bottom: -250px; width: 550px; height: 550px; border: 1px solid rgba(226, 234, 225, .16); border-radius: 50%; box-shadow: 0 0 0 45px rgba(226,234,225,.035), 0 0 0 90px rgba(226,234,225,.035); content: ""; }
+    .together-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, .95fr) minmax(340px, 1fr); align-items: center; gap: clamp(36px, 8vw, 110px); }
+    .together-section .eyebrow { color: #d2bb8d; }
+    .together-section h2 { max-width: 550px; color: #fffefa; }
+    .together-copy > p:not(.eyebrow) { max-width: 500px; margin-bottom: 25px; color: #d0d9d2; font-size: 17px; }
+    .together-section .button-primary { background: #f5f2e9; color: var(--forest-deep); box-shadow: none; }
+    .together-section .button-primary:hover { background: #fffefa; }
+    .collab-card { position: relative; padding: 25px; border: 1px solid rgba(255,255,255,.35); border-radius: 24px; background: #fffefa; color: var(--ink); box-shadow: 0 24px 60px rgba(0,0,0,.2); transform: rotate(-1deg); }
+    .collab-top { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 21px; }
+    .collab-top p { margin: 0; color: #738178; font-size: 11px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .avatar-stack { display: flex; padding-left: 8px; }
+    .avatar { display: grid; width: 30px; height: 30px; margin-left: -8px; place-items: center; border: 2px solid var(--surface); border-radius: 50%; background: #dce8de; color: #426b5b; font-size: 9px; font-weight: 800; }
+    .avatar:nth-child(2) { background: #f0e5d2; color: #967644; }
+    .avatar:nth-child(3) { background: #eadeda; color: #9b655c; }
+    .collab-card h3 { margin: 0 0 18px; font-size: 29px; }
+    .collab-row { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+    .collab-icon { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 11px; background: var(--sage); color: var(--forest); }
+    .collab-row strong { display: block; font-size: 12px; }
+    .collab-row small { display: block; color: #819087; font-size: 10px; }
+    .row-status { padding: 5px 9px; border-radius: 999px; background: #edf3ed; color: var(--forest); font-size: 10px; font-weight: 750; }
+    .collab-caption { margin: 14px 0 0; color: #718077; font-size: 11px; text-align: center; }
+
+    .pricing-section { background: #eeeee7; }
+    .plan-grid { display: grid; max-width: 900px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 0 auto; }
+    .plan-card { position: relative; padding: clamp(24px, 4vw, 36px); border: 1px solid #dfe3da; border-radius: 22px; background: var(--surface); }
+    .plan-card.featured { border: 2px solid var(--forest); box-shadow: var(--shadow); }
+    .plan-label { margin: 0 0 9px; color: var(--gold); font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .plan-card h3 { margin: 0 0 8px; font-size: 31px; }
+    .plan-intro { min-height: 50px; margin-bottom: 18px; color: var(--muted); font-size: 14px; }
+    .plan-list { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .plan-list li { display: flex; gap: 10px; color: #4e6257; font-size: 13px; }
+    .plan-list svg { width: 17px; height: 17px; flex: 0 0 auto; margin-top: 2px; color: var(--forest); }
+    .plan-footnote { max-width: 760px; margin: 24px auto 0; color: #78847b; font-size: 12px; text-align: center; }
+
+    .cta-section { position: relative; padding-block: 82px; text-align: center; }
+    .cta-section h2 { max-width: 760px; margin-inline: auto; }
+    .cta-section > .wrap > p:not(.eyebrow) { max-width: 560px; margin: 0 auto 25px; color: var(--muted); font-size: 17px; }
+    .store-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .store-link { display: inline-flex; min-height: 50px; align-items: center; gap: 11px; padding: 10px 17px; border: 1px solid #dce1d9; border-radius: 12px; background: var(--surface); color: var(--forest-deep); font-size: 13px; font-weight: 750; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+    .store-link:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(37,56,46,.09); }
+    .store-link svg { width: 22px; height: 22px; }
+    .cta-note { margin: 13px 0 0; color: #7c877f; font-size: 11px; }
+
+    .faq-section { padding-block: 40px 86px; }
+    .faq-section h2 { margin-bottom: 28px; text-align: center; }
+    .faq-list { max-width: 760px; margin-inline: auto; border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { position: relative; padding: 18px 42px 18px 0; color: var(--forest-deep); font-weight: 750; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { position: absolute; top: 14px; right: 4px; color: var(--gold); font-size: 23px; font-weight: 400; content: "+"; }
+    details[open] summary::after { content: "−"; }
+    details p { max-width: 690px; margin: -2px 35px 18px 0; color: var(--muted); font-size: 14px; }
+
+    .site-footer { border-top: 1px solid var(--line); background: #efeee8; }
+    .footer-inner { display: flex; min-height: 82px; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer-brand { color: var(--forest); font-size: 13px; font-weight: 800; letter-spacing: .15em; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+    .footer-links a { color: #64736a; font-size: 12px; text-decoration: none; }
+    .footer-links a:hover { color: var(--forest-deep); text-decoration: underline; }
+
+    @media (max-width: 860px) {
+      .hero { padding-top: 22px; }
+      .hero-grid { min-height: 500px; grid-template-columns: minmax(0, 1fr) minmax(280px, .75fr); gap: 20px; }
+      h1 { font-size: clamp(51px, 8vw, 72px); }
+      .phone-stage { min-height: 470px; }
+      .phone { width: min(275px, 84%); }
+      .phone-screen { min-height: 450px; }
+      .float-note-one { right: -3%; }
+      .float-note-two { left: -5%; }
+      .together-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+    }
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 34px, 520px); }
+      .header-inner { min-height: 72px; }
+      .brand { gap: 8px; font-size: 16px; }
+      .brand-mark { width: 32px; height: 32px; }
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: 12px; }
+      .nav-links a:nth-child(1), .nav-links a:nth-child(2) { display: none; }
+      .nav-links .nav-cta { padding: 9px 13px; }
+      .hero { padding: 24px 0 50px; }
+      .hero-grid { min-height: auto; grid-template-columns: 1fr; gap: 4px; }
+      .hero-copy { padding: 13px 0 0; }
+      .eyebrow { margin-bottom: 15px; font-size: 10px; }
+      h1 { max-width: 530px; margin-bottom: 16px; font-size: clamp(49px, 13vw, 70px); }
+      .hero-lede { max-width: 460px; margin-bottom: 20px; font-size: 17px; }
+      .hero-note { margin-top: 17px; }
+      .phone-stage { min-height: 455px; margin-top: -1px; }
+      .phone { width: min(275px, 69%); }
+      .float-note-one { top: 16%; right: 0; }
+      .float-note-two { bottom: 13%; left: 0; }
+      .section { padding-block: 64px; }
+      .section-heading { margin-bottom: 28px; text-align: left; }
+      .section-heading .eyebrow { justify-content: flex-start; }
+      .section-heading > p:last-child { margin-inline: 0; font-size: 15px; }
+      h2 { font-size: clamp(38px, 10vw, 50px); }
+      .feature-grid { grid-template-columns: 1fr; gap: 12px; }
+      .feature-card { padding: 23px; }
+      .feature-icon { margin-bottom: 15px; }
+      .feature-card h3 { font-size: 25px; }
+      .together-section { padding-block: 64px; }
+      .together-grid { grid-template-columns: 1fr; gap: 33px; }
+      .together-copy > p:not(.eyebrow) { font-size: 15px; }
+      .collab-card { padding: 21px; }
+      .plan-grid { grid-template-columns: 1fr; gap: 12px; }
+      .plan-intro { min-height: 0; }
+      .cta-section { padding-block: 62px; text-align: left; }
+      .cta-section h2 { margin-inline: 0; }
+      .cta-section > .wrap > p:not(.eyebrow) { margin-inline: 0; font-size: 15px; }
+      .store-links { justify-content: flex-start; }
+      .faq-section { padding-block: 20px 62px; }
+      .faq-section h2 { text-align: left; }
+      .footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 9px; padding-block: 19px; }
+    }
+    @media (max-width: 390px) {
+      .wrap { width: calc(100% - 28px); }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .phone-stage { min-height: 420px; }
+      .phone { width: 74%; }
+      .float-note { gap: 7px; padding: 10px 11px; font-size: 10px; }
+      .float-note-one { right: -1%; }
+      .float-note-two { left: -1%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Wedspace home">
+        <svg class="brand-mark" viewBox="0 0 120 120" role="img" aria-label="Interlocking rings">
+          <circle cx="44" cy="68" r="25" fill="none" stroke="#426B5B" stroke-width="7" />
+          <circle cx="76" cy="68" r="25" fill="none" stroke="#B58D4A" stroke-width="7" />
+          <path d="M60 23 66 29 60 35 54 29Z" fill="#B58D4A" />
+        </svg>
+        <span>WEDSPACE</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">The app</a>
+        <a href="#pass">Plans</a>
+        <a class="nav-cta" href="#download">Start planning <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Your wedding, in one calm space</p>
+          <h1 id="hero-title">Plan your wedding. <em>Keep the joy.</em></h1>
+          <p class="hero-lede">Every detail, together in one beautifully organised space—from the first checklist to the last dance.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Find Wedspace <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#features">Take a closer look</a>
+          </div>
+          <p class="hero-note">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/></svg>
+            Start free. Invite your wedding team when you’re ready.
+          </p>
+        </div>
+
+        <div class="phone-stage" aria-label="Wedspace app preview">
+          <div class="float-note float-note-one">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
+            Made for your whole team
+          </div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="phone-top"><span class="phone-speaker"></span><span class="phone-camera"></span></div>
+              <p class="screen-kicker">YOUR WEDDING</p>
+              <h2 class="screen-title">The little details</h2>
+              <p class="screen-subtitle">All coming together beautifully</p>
+              <div class="countdown-card">
+                <div class="clock-face"><svg width="31" height="31" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+                <div><p class="countdown-label">COUNTDOWN</p><p class="countdown-number">Your day</p><p class="countdown-caption">A little closer every day</p></div>
+              </div>
+              <div class="list-heading"><span>Your checklist</span><span>YOUR NEXT STEPS</span></div>
+              <div class="progress-track"><div class="progress-value"></div></div>
+              <div class="phone-task"><span class="task-check"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Choose your venue</div>
+              <div class="phone-task"><span class="task-check"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="m3 8 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Send save-the-dates</div>
+              <div class="phone-task"><span class="task-check pending"></span>Plan your ceremony</div>
+              <div class="phone-tabs"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="float-note float-note-two">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            Your plans · Your people · Your day
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">The details, together</p>
+          <h2 id="features-title">A little more organised. A lot more you.</h2>
+          <p>Wedspace brings your plans and people into one shared wedding workspace, so everyone knows what’s next and where to find it.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M8 3v3m8-3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v12H4V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="m8 14 2 2 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Make a plan that feels like yours</h3>
+            <p>Keep the big picture and the small to-dos close at hand, without losing sight of what matters.</p>
+            <ul><li>Date-aware checklist and countdown</li><li>Budget, costs and contributions</li><li>Suppliers, schedule, ideas and notes</li></ul>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m6-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8-3a4 4 0 0 1 0 7m2 6v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Bring your people in</h3>
+            <p>Share planning with your partner or planner. Keep guest details and replies together as plans take shape.</p>
+            <ul><li>Shared wedding workspace</li><li>Guest list and RSVP tracking</li><li>Designed invites and seating tools</li></ul>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H6l-3 2v-6a7.5 7.5 0 1 1 17-3.5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 11h8m-8 3h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <h3>Stay close through the day</h3>
+            <p>Give your wedding team a place to talk, coordinate and collect the moments you’ll want to remember.</p>
+            <ul><li>Group messages, photos and voice notes</li><li>Guest photo contributions</li><li>A shared album with couple approval</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="together-section" aria-labelledby="together-title">
+      <div class="wrap together-grid">
+        <div class="together-copy">
+          <p class="eyebrow">Better when shared</p>
+          <h2 id="together-title">One wedding. One space for your whole team.</h2>
+          <p>Keep plans in sync with the people helping make your day happen. Invite a partner or planner into the workspace, then work through decisions together.</p>
+          <a class="button button-primary" href="#download">Make room for your people <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="collab-card" aria-label="Illustration of a shared wedding planning workspace">
+          <div class="collab-top"><p>Your wedding team</p><div class="avatar-stack" aria-hidden="true"><span class="avatar">A</span><span class="avatar">J</span><span class="avatar">P</span></div></div>
+          <h3>Plans in one place</h3>
+          <div class="collab-row"><span class="collab-icon" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M8 3v3m8-3v3M4 9h16M6 5h12a2 2 0 0 1 2 2v12H4V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Wedding checklist</strong><small>Next up: confirm the flowers</small></span><span class="row-status">In progress</span></div>
+          <div class="collab-row"><span class="collab-icon" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Budget &amp; contributions</strong><small>Keep the numbers close</small></span><span class="row-status">Up to date</span></div>
+          <div class="collab-row"><span class="collab-icon" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m6-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8-3a4 4 0 0 1 0 7m2 6v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Guest list</strong><small>Replies, details and seating</small></span><span class="row-status">Together</span></div>
+          <p class="collab-caption">A little less juggling. A little more together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pass" aria-labelledby="pass-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Start simple, grow as you go</p>
+          <h2 id="pass-title">Room to plan, at your pace.</h2>
+          <p>Get started with the essentials for free. When you want more tools for your wedding, unlock them with the one-time Wedding Pass.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <p class="plan-label">A lovely place to begin</p>
+            <h3>Free to start</h3>
+            <p class="plan-intro">Create your wedding workspace and start with the details you know.</p>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Wedding checklist and budget</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Guest list for up to 50 people</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Guest photo uploads</li>
+            </ul>
+          </article>
+          <article class="plan-card featured">
+            <p class="plan-label">More space for every detail</p>
+            <h3>Wedding Pass</h3>
+            <p class="plan-intro">Unlock more planning and sharing tools for your wedding team.</p>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Expanded guest list and shared photo album</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Invitations, seating plans and room design</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Specialist planning guides and team messaging</li>
+            </ul>
+          </article>
+        </div>
+        <p class="plan-footnote">Wedding Pass is a one-time in-app purchase for a wedding. The App Store or Google Play displays the price in your local currency before you confirm.</p>
+      </div>
+    </section>
+
+    <section class="cta-section" id="download" aria-labelledby="download-title">
+      <div class="wrap">
+        <p class="eyebrow" style="justify-content:center">Made for the moments that matter</p>
+        <h2 id="download-title">Begin with the details you know. Build the rest together.</h2>
+        <p>Your wedding plans don’t have to live in a dozen different places. Bring them into Wedspace and take the next step at your own pace.</p>
+        <div class="store-links">
+          <a class="store-link" href="https://apps.apple.com/gb/search?term=Wedspace" target="_blank" rel="noopener noreferrer" aria-label="Find Wedspace on the Apple App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.27c.02 2.1 1.84 2.8 1.86 2.8-.02.05-.3 1.02-.96 2.02-.58.88-1.18 1.76-2.12 1.78-.92.02-1.22-.57-2.28-.57-1.06 0-1.39.55-2.26.59-.91.03-1.6-.95-2.19-1.82-1.2-1.76-2.11-4.98-.88-7.15.61-1.08 1.7-1.76 2.89-1.78.9-.02 1.74.62 2.29.62.55 0 1.57-.77 2.64-.66.45.02 1.72.18 2.53 1.37-.07.04-1.51.88-1.52 2.8Zm-1.74-6.15c.48-.58.8-1.39.71-2.2-.69.03-1.52.46-2.02 1.04-.44.5-.83 1.32-.73 2.1.77.06 1.56-.39 2.04-.94Z"/></svg>
+            Find us on the App Store
+          </a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=app.wedspace.weddingplanner" target="_blank" rel="noopener noreferrer" aria-label="Find Wedspace on Google Play">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.5c-.36.38-.57.98-.57 1.75v15.5c0 .77.21 1.37.57 1.75L12.1 12 3.6 2.5Zm9.56 8.43 2.23-2.5L6.23 2.6l6.93 8.33Zm3.25 3.64 3.2-1.83a.85.85 0 0 0 0-1.48l-3.2-1.84-2.46 2.58 2.46 2.57Zm-3.25-1.5L6.23 21.4l9.16-5.84-2.23-2.5Z"/></svg>
+            Find us on Google Play
+          </a>
+        </div>
+        <p class="cta-note">Store availability may vary by country and device.</p>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title">A few things you might be wondering</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Can we try Wedspace before buying anything?</summary>
+            <p>Yes. Your checklist, budget, first 50 guests and guest photo uploads are free. Wedding Pass is optional and unlocks additional tools for your wedding.</p>
+          </details>
+          <details>
+            <summary>Can our guests RSVP without making an account?</summary>
+            <p>Guest invitations are designed to be account-free. Guests install Wedspace, choose the guest invitation option and enter the private code shared with them to view their invitation and RSVP.</p>
+          </details>
+          <details>
+            <summary>Is Wedspace available on iPhone and Android?</summary>
+            <p>Wedspace is a mobile app for iOS and Android. Use the store links above to check availability for your device and region.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="#top" aria-label="Wedspace home">WEDSPACE</a>
+      <nav class="footer-links" aria-label="Wedspace information">
+        <a href="/wedspace-privacy-policy/">Privacy policy</a>
+        <a href="/wedspace-support/">Support</a>
+        <a href="/wedspace-delete-account/">Account deletion</a>
+        <a href="https://oluashiru.co.uk/">OLUASHIRU LTD</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
